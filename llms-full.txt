@@ -1,0 +1,717 @@
+# Sensor Sheet: all guides
+
+# HWiNFO 8.54: what it does, what is free and what Pro adds
+
+URL: https://hw-info.github.io/index.html
+Updated: 2026-11-05
+
+HWiNFO lists the hardware inside a Windows PC and reads its sensors in real time. This guide covers the free edition, the Pro licence and the two jobs most people install it for: checking temperatures and logging them.
+
+## Key facts
+
+- Current version: 8.54, 30 September 2026
+- Price: Free for non commercial use
+- Pro from: $29 first year
+- Lifetime from: $199 once
+- Windows: 95 and later, x86, x64, ARM64
+- Checked: 2026-11-05
+
+HWiNFO is a system information, monitoring and diagnostics program for Windows, with a separate DOS build. The 64 bit and ARM64 builds are free for non commercial use; a Pro licence, from $29 for the first year or from $199 for a lifetime licence, removes the 12 hour shared memory limit and the 5 item on screen display cap and permits commercial use on the right tier. The current stable version is 8.54.
+
+## What HWiNFO is
+
+HWiNFO is a system information, monitoring and diagnostics program for Windows, with a separate build for DOS. It does two jobs. It lists the hardware inside a PC as a tree of components, and it reads sensors in real time, covering processors, graphics cards, mainboards, drives and peripherals. The current stable release is 8.54, dated 30 September 2026.
+The 64 bit and ARM64 builds are free for non commercial use. The paid Pro licence lifts two limits that matter to people who feed sensor data to other programs: [the 12 hour shared memory limit and the 5 item on screen display cap](free-vs-pro.html). Subscriptions start from $29 for the first year and a lifetime licence starts from $199. The [licence and price page](pricing.html) has the terms, including the 14 day refund window.
+If you only want the program, go to the [HWiNFO download page](download.html), which explains the installer and the portable package. If you are still deciding, the [HWiNFO review](review.html) scores it and lists the limits, and the guide to [checking CPU and GPU temperature](check-temperatures.html) shows the Sensors-only mode.
+
+## Pages in this guide
+
+- Download: Installer or portable package, supported Windows versions, licence terms and the install steps.
+- Review: What the program does, the limits the vendor states, pros, cons and a score.
+- Free vs Pro: The feature line between the free 64 bit build and Pro, row by row.
+- Pricing: Subscription, lifetime, the three Pro tiers and the refund rule.
+- Check temperatures: Sensors-only mode, alerts and running at startup.
+- Log sensors: Record sensor values to a CSV file and choose what gets logged.
+- HWiNFO vs HWMonitor: The two best known free monitors side by side, from both vendors' pages.
+- Alternatives: Six other tools and what each vendor says they do.
+
+## Builds and what they run on
+
+The vendor ships one installer and one portable package. The table shows which build each contains and the licence that applies.
+| Build | Runs on | Licence |
+|---|---|---|
+| HWiNFO64 (installer or portable) | Windows 7 64 bit and later, x64 | Free for non commercial use, Pro for commercial use |
+| HWiNFO ARM64 | Windows on ARM64 | Free for non commercial use, Pro for commercial use |
+| HWiNFO32 (portable) | Windows 95 and later, x86 | Freeware, commercial use allowed |
+| HWiNFO for DOS | DOS on older x86 systems | Freeware, commercial use allowed |
+
+> Free reads every sensor in the PC. Pro is for when another program has to keep reading them after 12 hours.
+
+
+## FAQ
+
+**Is HWiNFO free?**
+
+Yes, for home use. HWiNFO64 and the ARM64 build are freeware for non commercial use, and HWiNFO32 and the DOS build are freeware without that restriction. Using the 64 bit or ARM64 build in a commercial environment requires a Pro licence.
+
+**What is the latest version of HWiNFO?**
+
+The current stable version is 8.54, released on 30 September 2026. A beta, 8.55 build 6115, is also offered in portable format only. Even version numbers are stable releases and odd numbers are test builds.
+
+**Does HWiNFO work on Windows 11?**
+
+Yes. The installer targets Windows 7 64 bit and later on x64 or ARM64, which includes Windows 11. The portable package also carries a 32 bit build that goes back to Windows 95.
+
+**Is there a HWiNFO for Mac or Linux?**
+
+The vendor's download page lists builds for Windows and DOS only. No macOS or Linux build is listed there.
+
+**Does HWiNFO send my data anywhere?**
+
+The vendor states that the program does not collect personal information and does not transmit data over the network. That is the vendor's statement, not an independent audit.
+
+
+---
+
+# HWiNFO download: version 8.54 installer and portable package
+
+URL: https://hw-info.github.io/download.html
+Updated: 2026-11-05
+
+The HWiNFO download comes in two forms on the vendor's site: an installer for 64 bit Windows and a portable package that holds the 32 bit, 64 bit and ARM64 builds. Here is which one to pick and what the licence allows.
+
+## Key facts
+
+- Version: 8.54, 30 September 2026
+- Installer: Windows 7 64 bit and later, x64 or ARM64
+- Portable: Windows 95 and later, x86, x64, ARM64
+- Price: Free for non commercial use
+- Installer size: Not confirmed, see vendor page
+- Checked: 2026-11-05
+
+The HWiNFO download is free on hwinfo.com. Version 8.54 is offered as an installer for Windows 7 64 bit and later (x64 or ARM64) and as a portable package containing HWiNFO32, HWiNFO64 and the ARM64 build. There is no trial period: the free edition keeps working, with a 12 hour shared memory limit and a 5 item on screen display cap that only Pro removes.
+
+## What you get
+
+The HWiNFO download gives you the full program, not a cut down trial. The free edition shows the complete hardware tree and every sensor the program can read, and it can write reports and sensor logs. The differences from the paid edition are listed on the [free vs Pro page](free-vs-pro.html).
+The button below goes to the vendor's own download page. This guide does not host installers, and you should not take HWiNFO from mirror sites that repackage it.
+
+## Installer or portable
+
+| Package | Contains | Runs on | Good for |
+|---|---|---|---|
+| Installer | HWiNFO64 or the ARM64 build, matched to the PC | Windows 7 64 bit and later | A PC you monitor every day |
+| Portable | HWiNFO32, HWiNFO64 and HWiNFO ARM64 | Windows 95 and later, x86, x64 or ARM64 | USB sticks, one off checks, old 32 bit systems |
+| Beta (8.55 build 6115) | Portable format only | Same as portable | Trying support for very new hardware |
+| DOS build | Portable | DOS on older x86 systems | Legacy machines |
+The vendor does not confirm an installer size in the pages read for this guide, so check the figure on the download page itself. Even numbered versions such as 8.54 are stable releases; odd numbered versions are test builds.
+
+## Install in 4 steps
+
+1. Open the vendor's download page: Use the button on this page. It leads to hwinfo.com, where the installer and the portable package for version 8.54 are listed.
+2. Pick the package: Choose the installer for a 64 bit or ARM64 Windows PC you will monitor regularly. Choose the portable package if you want no installation or need the 32 bit build.
+3. Run it: Run the installer, or unpack the portable archive and start the build that matches your system. The portable package keeps machine specific settings in the registry unless you switch off Remember Preferences.
+4. Choose a mode on the welcome screen: Leave Sensors-only and Summary-only unticked to get every feature, or tick Sensors-only if you just want temperatures, voltages and fan speeds.
+Next step: the guide to [checking CPU and GPU temperature](check-temperatures.html) walks through the sensors window.
+
+## Licence terms in short
+
+HWiNFO64 and HWiNFO ARM64 are freeware for non commercial use only. HWiNFO32 and the DOS build are freeware and may also be used commercially. Using the 64 bit or ARM64 build at work requires a Pro licence, and the Personal tier of Pro does not cover commercial use either.
+Pro subscriptions start from $29 for the first year and a lifetime licence starts from $199, before local taxes. Refunds are accepted up to 14 days from the order date, subject to individual review. The full table is on the [HWiNFO Pro price page](pricing.html), and the [review](review.html) helps you decide whether you need Pro at all.
+
+
+## FAQ
+
+**Is the HWiNFO download safe?**
+
+Take it from hwinfo.com, the vendor's own site, which is where the button on this page leads. The vendor states the program does not collect personal information or transmit data over the network. Avoid mirror sites and repackaged copies.
+
+**Should I pick HWiNFO64 or HWiNFO32?**
+
+Pick HWiNFO64 on any 64 bit Windows from Windows 7 onward; it is what the installer sets up. HWiNFO32 is the legacy build in the portable package for 32 bit systems back to Windows 95.
+
+**Is there a trial of HWiNFO Pro?**
+
+The vendor pages read for this guide do not describe a Pro trial. The free edition is the way to try the program, and Pro purchases have a 14 day refund window that is subject to individual review.
+
+**Can I test a beta without reinstalling?**
+
+Yes. Betas come in portable format only, and the author's advice is to copy the file from the beta package over the one in the installed folder.
+
+**Do I need to create an account?**
+
+No account is mentioned for the free download. A Pro licence is bought through 2Checkout (Verifone), which emails the licence key after payment.
+
+
+---
+
+# HWiNFO review: what version 8.54 does and where the free edition stops
+
+URL: https://hw-info.github.io/review.html
+Updated: 2026-11-05
+
+This HWiNFO review is built from the vendor's own documentation, licence page and release notes. It covers the hardware inventory, the sensors, reports and logging, and the limits that separate the free edition from Pro.
+
+## Key facts
+
+- Score: 8.6 / 10
+- Version: 8.54, 30 September 2026
+- Free edition: Full inventory, sensors, reports, logs
+- Free limits: 12 hour shared memory, 5 OSD items
+- Pro from: $29 first year, lifetime from $199
+- Checked: 2026-11-05
+
+HWiNFO scores 8.6 out of 10 in this review. The free edition covers the full hardware inventory, real time sensors, alerts, reports and CSV logging, and it is updated often: eight stable releases between January and September 2026. The paid Pro licence is only needed for commercial use, for more than 5 on screen display items, or when another program must read sensor data for longer than 12 hours.
+
+## Verdict (8.6/10)
+
+For a home PC the free edition is enough: it shows every component and every sensor, raises alerts and writes logs. Pay for Pro when you hit one of three walls the vendor states plainly: commercial use, the 12 hour shared memory limit, or the 5 item on screen display cap.
+The score is an editorial judgement based on the vendor's published features, limits and prices. No hands on benchmark or accuracy test stands behind it.
+
+## Hardware inventory
+
+The first half of the program is an inventory. HWiNFO presents the components of the PC as a hierarchy: processor, mainboard, memory, graphics, drives with their S.M.A.R.T. data, network adapters and battery. This HWiNFO review treats that tree as the reason to keep the full mode available, even if you mostly use sensors.
+The release notes show how closely the author tracks new hardware. Version 8.40 in January 2026 added new Intel processor families, 8.46 in April added a new graphics card model and page file reporting, and 8.54 in September added NVMe power state reporting. If you run very recent parts, the beta builds usually pick them up first.
+
+## Sensors and alerts
+
+The second half is real time monitoring of processors, graphics cards, mainboards, drives and peripherals. You can start straight into it with the Sensors-only option on the welcome screen. Alerts can be set on any monitored value, so the program can warn you when a temperature or voltage crosses a threshold you choose.
+Version 8.54 lowered the minimum sensor polling period to 20 ms, and 8.40 made sensor polling multi threaded. HWiNFO64 also has its own on screen display for showing values over a game; the free edition shows up to 5 items there. How it compares with the other well known free monitor is covered in [HWiNFO vs HWMonitor](hwinfo-vs-hwmonitor.html).
+
+## Reports, logging and add ons
+
+Reports export to XML, CSV and HTML, which is useful when you need to document a machine before selling or repairing it. Sensor values can be recorded over time to a CSV file from a button in the sensors window; the procedure is in the guide to [logging sensors to CSV](log-sensors.html).
+Other programs can read HWiNFO's values through its shared memory interface. The vendor's add ons page lists a Rainmeter plugin, a Stream Deck plugin, the HWiNFOMonitor gadget and a Generic Log Viewer for analysing log files. Remote monitoring of other machines is supported too, with up to 300 connections.
+
+## Where the free edition stops
+
+The limits are stated on the vendor's licence page. Shared memory support in the free 64 bit and ARM64 builds runs for 12 hours, then switches itself off and has to be enabled again by hand. Remote sensor monitoring uses the same interface, so it carries the same 12 hour limit. The on screen display is capped at 5 items.
+Automatic reports and sensor logging from the command line, and automatic updates, are Pro only. The whole comparison is on the [free vs Pro page](free-vs-pro.html), and the [price page](pricing.html) lists what each licence tier permits.
+
+## Pros and cons
+
+Pros:
+- Free edition includes the full inventory, sensors, alerts, reports and CSV logging
+- Frequent releases: 8.40 to 8.54 in nine months of 2026
+- Portable package with 32 bit, 64 bit and ARM64 builds, back to Windows 95
+- Refund accepted within 14 days of the order, subject to review
+- Lifetime licence available for people who dislike subscriptions
+Cons:
+- Shared memory and remote monitoring stop after 12 hours in the free edition
+- On screen display limited to 5 items without Pro
+- Commercial use of the 64 bit build needs Pro, and the Personal tier does not cover it
+- No macOS or Linux build listed
+- Engineer and Corporate prices are not easy to find outside the checkout
+
+## Who it suits
+
+HWiNFO suits anyone who wants to know exactly what is inside a Windows PC and how hot it runs, at no cost. It suits system builders and repair shops as well, though they need an Engineer or Corporate licence for the 64 bit build. People who only want one number, such as processor temperature, may find a smaller tool easier.
+Ready to try it? The [download page](download.html) explains which package to take.
+
+
+## FAQ
+
+**Is HWiNFO safe to use?**
+
+HWiNFO is published by its author on hwinfo.com and has had regular releases throughout 2026. The vendor states it does not collect personal information or transmit data over the network. Download it from the vendor's site rather than from mirrors.
+
+**Is HWiNFO accurate?**
+
+The vendor does not publish accuracy figures, and this review did not measure any. The program reads the sensors that the hardware exposes, and the release notes show regular fixes for specific sensor readings.
+
+**Is HWiNFO really free?**
+
+Yes for non commercial use of the 64 bit and ARM64 builds, and without restriction for HWiNFO32 and the DOS build. The free edition has a 12 hour shared memory limit and a 5 item on screen display cap.
+
+**Is HWiNFO Pro worth it?**
+
+It is worth it if you use the program commercially, need more than 5 on screen display items, or run a gadget or dashboard that reads shared memory around the clock. For occasional temperature checks the free edition does the same job.
+
+**How often is HWiNFO updated?**
+
+The version history lists stable releases on 8 January, 24 February, 4 March, 14 April, 26 May, 8 July, 25 August and 30 September 2026. Beta builds appear between them.
+
+
+---
+
+# HWiNFO Pro price: subscription, lifetime licence and refund terms
+
+URL: https://hw-info.github.io/pricing.html
+Updated: 2026-11-05
+
+The HWiNFO Pro price depends on two choices: subscription or lifetime, and which of the three tiers you need. These are the figures and terms on the vendor's licence page, with the gaps marked.
+
+## Key facts
+
+- Free edition: $0, non commercial use
+- Subscription: From $29 first year
+- Renewal: From $14.50, 50% to 60% off
+- Lifetime: From $199 once
+- Refund: 14 days, subject to review
+- Checked: 2026-11-05
+
+The HWiNFO Pro price starts from $29 for the first year of a subscription, with renewals from $14.50, and from $199 for a lifetime licence that covers all future updates. Prices exclude local taxes and the final amount is shown at checkout. Refunds are accepted up to 14 days from the order date, subject to individual review.
+
+## Licences at a glance
+
+The HWiNFO Pro price is published as a from figure on the vendor's licence page. The table sets it beside the free builds. Where a separate price for a tier could not be confirmed, the table says so.
+| Licence | Who may use it | Commercial use | Price |
+|---|---|---|---|
+| HWiNFO64 and ARM64, free | Anyone | No | $0 |
+| HWiNFO32 and DOS | Anyone | Yes | $0 |
+| Pro Personal | One private user | No | Subscription from $29 first year |
+| Pro Engineer | 1 user on unlimited computers | Yes | Not confirmed, shown at checkout |
+| Pro Corporate | 1 computer, unlimited users in the organisation | Yes | Not confirmed, shown at checkout |
+| Lifetime option | As the chosen tier | As the chosen tier | From $199 once |
+The vendor lists a volume discount for all three Pro tiers. Prices exclude local taxes.
+
+## How the subscription works
+
+A subscription buys a maintenance period of 1, 2 or 3 years. During that period you can license every Pro version that is released. When it ends, the versions released during the period keep working as Pro; only the right to license newer versions lapses.
+Renewal is cheaper than the first purchase. The licence page gives a renewal discount of 50% to 60%, with renewals from $14.50. If you let it lapse you are not locked out of the program, since the free edition and your last licensed Pro version both remain usable. What you lose by staying on the free edition is set out on the [free vs Pro page](free-vs-pro.html).
+
+## The lifetime licence
+
+The lifetime licence is a one time purchase that covers all future updates of HWiNFO 64 and ARM64 Pro. The licence page shows it from $199. The page text available for this guide does not make clear which tier that figure belongs to, so confirm the amount for your tier at checkout.
+As a rough guide using the from prices only, a first year at $29 followed by renewals at $14.50 stays below $199 for more than a decade. The author describes lifetime as the premium option and points price sensitive buyers to the subscription.
+
+## Refunds and payment
+
+Refunds are accepted up to 14 days from the date of the order and are subject to individual review, according to the licence page and the licence agreement. That is a review, not an unconditional money back guarantee.
+Payment runs through 2Checkout (Verifone), which bills you and emails the licence key. The vendor points to 2Checkout's own refund policy for processing details. No coupon codes are published on the vendor pages read for this guide; the only standing discounts are the renewal and volume discounts.
+
+## Which licence to choose
+
+- Home PC, occasional checks: stay on the free edition from the [download page](download.html).
+- Home PC with a dashboard, gadget or more than 5 on screen display items: Pro Personal subscription.
+- Technician who works on many machines: Pro Engineer, licensed per user.
+- Company machines with shared users: Pro Corporate, licensed per computer.
+- Remote monitoring: the licence on the central system has to cover all connected machines.
+Not sure the program is right for you at all? Read the [HWiNFO review](review.html) first, or look at the [alternatives](alternatives.html).
+
+
+## FAQ
+
+**How much does HWiNFO Pro cost?**
+
+A subscription starts from $29 for the first year and renews from $14.50. A lifetime licence starts from $199. Local taxes are added at checkout, where the final price for your country is shown.
+
+**Is there a HWiNFO lifetime licence?**
+
+Yes. The lifetime licence is a one time purchase that covers all future updates of HWiNFO 64 and ARM64 Pro. The licence page shows it from $199.
+
+**What is the HWiNFO refund policy?**
+
+Refunds are accepted up to 14 days from the date of the order and each request is reviewed individually. Payments and refunds are processed by 2Checkout (Verifone).
+
+**What happens when my subscription ends?**
+
+Pro versions released during your maintenance period keep working. You lose only the right to license versions released afterwards, until you renew.
+
+**Do I need a licence to use HWiNFO at work?**
+
+Yes for HWiNFO64 and the ARM64 build: commercial use requires an Engineer or Corporate Pro licence, and the Personal tier does not cover it. HWiNFO32 and the DOS build are freeware that may be used commercially.
+
+**Is there a HWiNFO coupon or discount?**
+
+The vendor pages read for this guide list no coupon codes. The published discounts are 50% to 60% on renewals and a volume discount on all three Pro tiers.
+
+
+---
+
+# HWiNFO free vs Pro: the limits and what the licence removes
+
+URL: https://hw-info.github.io/free-vs-pro.html
+Updated: 2026-11-05
+
+HWiNFO free vs Pro comes down to a short list on the vendor's licence page: a 12 hour limit, a 5 item cap, command line automation, automatic updates and the right to use it commercially.
+
+## Key facts
+
+- Shared memory, free: 12 hours, then off
+- Shared memory, Pro: No time limit
+- OSD items: 5 free, unlimited Pro
+- Command line automation: Pro only
+- Commercial use: Engineer or Corporate licence
+- Checked: 2026-11-05
+
+In HWiNFO free vs Pro, the monitoring itself is the same: both show the full hardware tree and every sensor. The free 64 bit and ARM64 builds switch shared memory support off after 12 hours, show at most 5 on screen display items, and lack command line reporting and logging and automatic updates. Pro removes those limits and, on the Engineer and Corporate tiers, permits commercial use.
+
+## Feature line between free and Pro
+
+HWiNFO free vs Pro is drawn in the comparison table on the vendor's licence page. The rows below are the ones that differ.
+| Feature | Free (HWiNFO64, ARM64) | Pro |
+|---|---|---|
+| Hardware inventory and sensors | Yes | Yes |
+| Shared Memory Support | Limited to 12 hours per run | Not time limited |
+| Remote sensor monitoring | Limited to 12 hours | No 12 hour cut off, up to 300 connections |
+| On screen display items | 5 | Unlimited |
+| Automatic report from the command line | No | Yes |
+| Sensor logging from the command line | No | Yes |
+| Automatic update | No | Yes |
+| NPU stress test (added in 8.42) | No | Yes |
+| Commercial use | No | Yes on Engineer and Corporate, no on Personal |
+| Price | $0 | From $29 first year or from $199 lifetime |
+
+## The 12 hour shared memory limit
+
+Shared memory is how other programs read HWiNFO's sensor values: Rainmeter skins, the Stream Deck plugin, dashboards and similar add ons. In the free edition it is time limited to 12 hours. When the limit is reached while the program is running, the feature is deactivated automatically and you have to enable Shared Memory Support again by hand.
+This explains a common complaint that the Shared Memory Support setting becomes unchecked after a few hours. It is the documented limit, not a fault. If your PC is switched off each night you may never notice it. A machine that runs for days with a sensor panel attached will.
+
+## The 5 item on screen display cap
+
+HWiNFO64 has a built in on screen display for showing sensor values over a game. The licence table lists a maximum of 5 items in the free edition and unlimited in Pro. Since version 8.54 the display can put several values on one line.
+Five items cover the usual set of processor temperature, graphics temperature, two loads and a frame related value. People who want a full telemetry column are the ones the cap affects.
+
+## Command line, updates and remote use
+
+Pro adds a command line interface for automatic reporting and sensor logging, which is what you need to script an inventory across many machines or start a log without clicking. In the free edition, logging is started by hand from the sensors window, as described in the [sensor logging guide](log-sensors.html).
+Automatic updates are Pro only; free users fetch new versions themselves. Remote sensor monitoring relies on shared memory, so in the free edition it stops after 12 hours too. With Pro, the licence on the central system has to cover every machine connected to it.
+
+## Commercial use
+
+Using HWiNFO64 or HWiNFO ARM64 in a commercial environment requires a Pro licence, and the Personal tier does not qualify. Engineer is licensed per user for unlimited computers and Corporate per computer for unlimited users. The [price page](pricing.html) has the terms.
+HWiNFO32 and the DOS build are freeware that may be used commercially, but they are legacy builds.
+
+## Do you need Pro?
+
+- No, if you open HWiNFO to check temperatures, read specifications or log a session by hand.
+- Yes, if a gadget, panel or remote viewer must keep receiving data for more than 12 hours.
+- Yes, if you want more than 5 values in the on screen display.
+- Yes, if you script reports or logging, or use the 64 bit build at work.
+The cheapest way to find out is to run the free edition from the [download page](download.html) for a week. If the 12 hour limit is the only problem and you would rather not pay, some of the [HWiNFO alternatives](alternatives.html) may fit.
+
+## FAQ
+
+**Why does HWiNFO shared memory turn off after 12 hours?**
+
+It is the stated limit of the free 64 bit and ARM64 builds. After 12 hours of run time the feature deactivates itself and must be enabled again manually. Pro has no time limit.
+
+**How many OSD items does free HWiNFO allow?**
+
+Five. The vendor's licence table lists a maximum of 5 on screen display items for the free edition and unlimited for Pro.
+
+**Does the free edition show fewer sensors than Pro?**
+
+No. The vendor's comparison does not list any sensor or inventory difference. The limits concern shared memory time, on screen display items, command line automation, automatic updates and commercial use.
+
+**Can I log sensors in the free edition?**
+
+Yes. Logging to CSV is started from a button in the sensors window. Only starting a log automatically from the command line is a Pro feature.
+
+**Does Pro stop working when the subscription ends?**
+
+No. Pro versions released during your maintenance period keep working after it ends. You need to renew only to license newer versions.
+
+
+---
+
+# How to check CPU and GPU temperature with HWiNFO
+
+URL: https://hw-info.github.io/check-temperatures.html
+Updated: 2026-11-05
+
+To check CPU temperature with HWiNFO you only need the sensors window. These steps use the option names the program itself uses and the answers its author gives in the vendor forum.
+
+## Key facts
+
+- Mode: Sensors-only on the welcome screen
+- Covers: CPU, GPU, mainboard, drives, peripherals
+- Default polling: 2000 ms
+- OSD: Up to 5 items in the free edition
+- Cost: Free for non commercial use
+- Checked: 2026-11-05
+
+To check CPU temperature with HWiNFO, start the program, tick Sensors-only on the welcome screen and read the processor and graphics entries in the sensors window. Values refresh every 2000 ms by default. The free edition is enough for this; you can add alerts, show up to 5 values in the on screen display and enable Auto Start to keep it running.
+
+## Before you start
+
+You need HWiNFO on a Windows PC; the [download page](download.html) explains the installer and the portable package. Everything on this page works in the free edition. To check CPU temperature with HWiNFO you do not need the full hardware tree, which is why the program offers a mode that opens the sensors alone.
+The vendor does not publish safe temperature limits for your hardware. Compare what you read with the maximum operating temperature in the specification from the maker of your processor or graphics card.
+
+## Steps
+
+1. Start HWiNFO and tick Sensors-only: The welcome screen has two options, Sensors-only and Summary-only. Tick Sensors-only to open just the sensors window. With both unticked you get every feature, including the hardware tree.
+2. Find the processor and graphics entries: The sensors window groups readings by device: processors, graphics cards, mainboard, drives and peripherals. Temperatures sit alongside voltages, fan speeds, loads and clocks for each device.
+3. Let it run under load: Start the game or task you care about and leave the sensors window open. Values refresh on the polling period, 2000 ms by default, and version 8.54 allows a period as short as 20 ms.
+4. Set an alert: HWiNFO can raise an alert when any monitored value reaches a threshold you set in the sensor settings. Use it for the processor and graphics temperatures you want to watch.
+5. Show values in a game: HWiNFO64 has its own on screen display. Pick the values to show in the sensor settings; the free edition shows up to 5 items, and since 8.54 several values can share a line.
+6. Keep it running: Enable Auto Start in the settings so HWiNFO starts with Windows; this creates a task in the Task Scheduler. Show Sensors on Startup opens the sensors window directly, and Minimize Sensors instead of closing keeps it out of the way.
+
+## Reading the sensors window
+
+A modern PC exposes a long list of sensors, and HWiNFO shows all it can read. For a quick health check you need only a handful: the processor temperature, the graphics card temperature, drive temperatures and the fan speeds. Monitoring can be switched off for sensors you do not need, which shortens the list.
+In Sensors-only mode the program places an icon in the system tray. Right click it to reach the Settings menu. If you want a record over time instead of a live view, continue with [logging sensors to a CSV file](log-sensors.html).
+
+## Common problems
+
+- Only the summary appears and no sensors: Summary-only is ticked. Untick it on the welcome screen.
+- The welcome screen no longer appears: enable Show Welcome Screen and Progress in the settings, click OK and start HWiNFO again.
+- Stuck in Sensors-only with Auto Start on: the author's fix is to open HWiNFO64.INI and set SensorsOnly to 0.
+- Settings in a mess: the Reset Preferences button in the settings window restores the defaults.
+- A gadget stops receiving values after some hours: that is the 12 hour shared memory limit, explained under [free vs Pro](free-vs-pro.html).
+
+## If you want something simpler
+
+HWiNFO shows far more than temperatures, and that can be more than you need. A smaller monitor may suit a quick look; the comparison of [HWiNFO vs HWMonitor](hwinfo-vs-hwmonitor.html) sets the two side by side.
+
+
+## FAQ
+
+**How do I see CPU temperature in HWiNFO?**
+
+Start HWiNFO, tick Sensors-only on the welcome screen and look for the processor entries in the sensors window. Temperatures are listed with the other readings for each device.
+
+**Why does HWiNFO only show the summary?**
+
+Summary-only is enabled. Untick it on the welcome screen, or use Reset Preferences in the settings window if the welcome screen is hidden.
+
+**How often does HWiNFO update readings?**
+
+The default polling period is 2000 ms. It can be changed in the settings, and version 8.54 reduced the minimum to 20 ms.
+
+**Can HWiNFO start with Windows?**
+
+Yes. The Auto Start option creates a task in the Windows Task Scheduler. Combine it with Show Sensors on Startup to open the sensors window automatically.
+
+**What temperature is too high?**
+
+HWiNFO's vendor does not publish limits. Check the maximum operating temperature in the specification from the maker of your processor or graphics card and set an alert below it.
+
+
+---
+
+# HWiNFO logging: how to record sensors to a CSV file
+
+URL: https://hw-info.github.io/log-sensors.html
+Updated: 2026-11-05
+
+HWiNFO logging writes sensor values to a CSV file while you play or run a workload. The steps below follow the answers the program's author gives in the vendor forum.
+
+## Key facts
+
+- Where: Button at the bottom of the sensors window
+- Format: CSV, opens in Excel
+- Choose values: Logged checkbox in sensor settings
+- Default polling: 2000 ms
+- Automatic start: Pro only, command line
+- Checked: 2026-11-05
+
+HWiNFO logging is started with the button at the bottom of the sensors window, which writes sensor values to a CSV file until you stop it. The Logged checkbox in the sensor settings decides which values go into the file. Manual logging works in the free edition; starting a log automatically from the command line is a Pro feature.
+
+## What the sensor log is
+
+HWiNFO logging records every polled value of the sensors you select, one row per polling cycle, in a CSV file that spreadsheet programs open directly. It is the tool for questions a live view cannot answer: how hot the processor got during a two hour session, or whether a voltage dipped before a crash.
+The sensor log is separate from the report file. A report is a snapshot of the hardware inventory in XML, CSV or HTML. The author notes that the report option to log all sensors affects only the report, not the sensor log.
+
+## Steps
+
+1. Open the sensors window: Start HWiNFO and tick Sensors-only on the welcome screen, or open the sensors from the full program. If you have not installed it yet, see the download page.
+2. Choose what to log: Open the sensor settings and go to the tab for customising values. Make sure Logged is enabled for each value you want in the file and that monitoring of that sensor is enabled.
+3. Start logging: Use the button at the bottom of the sensors window that starts and stops logging, and choose where to save the file.
+4. Run your workload: Leave HWiNFO running while you play or test. A new row is written on each polling cycle.
+5. Stop logging: Press the same button again. The file is complete once logging stops.
+6. Open the CSV: Import the file into a spreadsheet, or load it in the Generic Log Viewer listed on the vendor's add ons page to plot and compare logs.
+New to the sensors window? The guide to [checking temperatures with HWiNFO](check-temperatures.html) covers Sensors-only mode, and the [download page](download.html) covers installation.
+
+## Keeping the file small
+
+By default a log can contain hundreds of columns. The Logged checkbox is the filter: untick it for values you do not need and they stay out of the CSV. Disabling monitoring for whole sensors you never read also reduces the work done on every cycle.
+Sensors that appear only after logging has started cannot be placed in the header at the top. HWiNFO adds a second header at the bottom of the file that lists those late sensors as well, so check the end of the file if a column seems to have no title.
+
+## Polling period and timing
+
+The global polling period is 2000 ms by default and sets how often a row is written. It applies to all sensors; separate periods exist only for S.M.A.R.T. and embedded controller sensors, which are derived from the global value. Version 8.54 lowered the minimum period to 20 ms.
+Do not expect exact spacing between rows. The author says millisecond precision is not achievable, and slow sensors stretch the interval. The Profiling Time column shows which sensors take longest to read, so you can disable them.
+
+## What Pro adds to logging
+
+In the free edition a person has to press the button. Pro adds command line switches that start the sensors with logging automatically, set the polling rate, choose the log format and limit the run time. Version 8.54 also allows notes to be inserted into the JSON sensor log.
+That matters for unattended test benches and scheduled jobs. The other differences are on the [free vs Pro page](free-vs-pro.html), and licence costs are on the [price page](pricing.html).
+
+
+## FAQ
+
+**How do I start logging in HWiNFO?**
+
+Open the sensors window and use the button at the bottom that starts and stops logging. Choose a file location, run your workload and press the button again to finish.
+
+**Where does HWiNFO save the log file?**
+
+In the location you choose when you start logging. The output is a CSV file that can be imported into Excel or another spreadsheet.
+
+**Why are some sensors missing from my log?**
+
+Check that Logged is enabled for those values in the sensor settings and that monitoring of the sensor is enabled. The report option to log all sensors does not affect the sensor log.
+
+**Can HWiNFO start logging automatically?**
+
+Only in Pro, which supports command line switches that start the sensors with logging. In the free edition logging is started by hand.
+
+**How do I view a HWiNFO log as a graph?**
+
+Open the CSV in a spreadsheet and chart the columns, or use the Generic Log Viewer from the vendor's add ons page, which is made for analysing and comparing HWiNFO logs.
+
+**Why is a header row at the bottom of my CSV?**
+
+Sensors that appeared after logging began could not be included in the first header. HWiNFO writes a second header at the end of the file that lists them too.
+
+
+---
+
+# HWiNFO vs HWMonitor: which hardware monitor to install
+
+URL: https://hw-info.github.io/hwinfo-vs-hwmonitor.html
+Updated: 2026-11-05
+
+HWiNFO vs HWMonitor is the usual choice when you want to see temperatures on a Windows PC. This comparison uses only what each vendor publishes on its own product pages.
+
+## Key facts
+
+- HWiNFO version: 8.54, 30 September 2026
+- HWMonitor version: 1.68, 14 September 2026
+- HWiNFO scope: Full inventory plus sensors
+- HWMonitor scope: Main health sensors
+- HWiNFO Pro from: $29 first year
+- HWMonitor PRO price: Not on the product page
+- Checked: 2026-11-05
+
+In HWiNFO vs HWMonitor, HWiNFO is the broader tool: it adds a full hardware inventory, XML, CSV and HTML reports, alerts, CSV logging and remote monitoring to the sensor view, free for non commercial use. HWMonitor from CPUID is a narrower program that reads the main health sensors: voltages, temperatures, fan speeds and clock speeds. Pick HWMonitor for a quick look and HWiNFO when you need detail, logs or alerts.
+
+## The short version
+
+HWiNFO vs HWMonitor is less a contest than a difference in scope. HWMonitor, published by CPUID, describes itself as a hardware monitoring program that reads a PC's main health sensors. HWiNFO describes itself as system information, monitoring and diagnostics, and the sensor view is only half of it.
+Both are current. HWMonitor 1.68 is dated 14 September 2026 and HWiNFO 8.54 is dated 30 September 2026. Neither vendor publishes accuracy tests against the other, and none were run for this page.
+
+## Side by side
+
+|  | HWiNFO | HWMonitor |
+|---|---|---|
+| Vendor | HWiNFO | CPUID |
+| Current version | 8.54, 30 September 2026 | 1.68, 14 September 2026 |
+| Platforms | Windows 95 and later on x86, x64, ARM64; DOS build | Windows x86 and x64 |
+| Packages | Installer and portable | Setup program and zip archive |
+| Scope | Hardware inventory tree plus real time sensors | Main health sensors: voltages, temperatures, fan speeds, clock speeds |
+| Reports | XML, CSV, HTML | Not stated on the product page |
+| Logging | CSV sensor log in the free edition | Graph generator from saved data in PRO |
+| Alerts | Yes, on any monitored value | Not stated on the product page |
+| Remote monitoring | Yes; 12 hour limit in free, up to 300 connections | PRO only, up to 20 remote connections |
+| Paid edition | Pro from $29 first year or from $199 lifetime | HWMonitor PRO; price not shown on the product page |
+Entries marked not stated mean the vendor's product page does not mention the feature. It does not prove the feature is absent.
+
+## When HWiNFO is the better pick
+
+- You want the specifications of every component as well as the sensors.
+- You need a record: the free edition writes sensor logs to CSV and reports to XML, CSV or HTML.
+- You want a warning when a value crosses a threshold.
+- You run Windows on ARM64 or a very old 32 bit system; the portable package covers both.
+- You feed values to gadgets or panels through shared memory, bearing in mind the 12 hour limit of the free edition.
+The [HWiNFO review](review.html) goes through these features and the free edition's limits in more detail.
+
+## When HWMonitor is the better pick
+
+HWMonitor does one thing: it shows the main health sensors. If all you want is to glance at temperatures, voltages and fan speeds, a program with that scope gives you less to scroll through.
+HWMonitor PRO, version 1.59 dated 21 July 2026, adds remote monitoring of other PCs or Android devices over TCP/IP, a graph generator that saves logging graphs as bitmap files, sensors in the system tray and editable sensor labels. Its licence includes unlimited usage duration, up to 20 remote connections and 2 years of free updates. CPUID does not show the price on the product page.
+
+## Paid editions compared
+
+HWiNFO publishes its entry prices: from $29 for the first year of a Pro subscription, renewals from $14.50, and a lifetime licence from $199, with refunds accepted within 14 days subject to review. Details are on the [HWiNFO Pro price page](pricing.html). For HWMonitor PRO you have to visit CPUID's shop to see a price.
+The two paid editions also unlock different things. HWiNFO Pro mainly removes limits and permits commercial use. HWMonitor PRO adds features the free HWMonitor does not have, such as remote monitoring and graphs. Other options are listed under [HWiNFO alternatives](alternatives.html).
+
+
+## FAQ
+
+**Is HWiNFO better than HWMonitor?**
+
+HWiNFO does more: inventory, reports, alerts, CSV logging and remote monitoring on top of the sensors. HWMonitor is narrower and reads the main health sensors. Which is better depends on whether you want detail or a quick look.
+
+**Which is more accurate, HWiNFO or HWMonitor?**
+
+Neither vendor publishes accuracy figures and no measurement was made for this page. Both read the sensors that the hardware exposes.
+
+**Are both programs free?**
+
+HWiNFO64 is free for non commercial use, with paid Pro licences. CPUID offers HWMonitor as a direct download and sells an extended HWMonitor PRO; its product page does not state a price.
+
+**Can I run HWiNFO and HWMonitor together?**
+
+Neither vendor's product page addresses running both at once. The [download page](download.html) of this guide covers getting HWiNFO; try one monitor at a time if readings look odd.
+
+**Does HWMonitor log temperatures?**
+
+The standard HWMonitor page does not mention logging. HWMonitor PRO has a graph generator that saves monitoring data and produces logging graphs as bitmap files.
+
+
+---
+
+# HWiNFO alternatives: 6 hardware monitoring tools compared
+
+URL: https://hw-info.github.io/alternatives.html
+Updated: 2026-11-05
+
+These HWiNFO alternatives cover the same ground in different ways, from a single purpose temperature reader to a paid diagnostic suite. Each entry uses facts from that tool's own official page.
+
+## Key facts
+
+- Tools listed: 6
+- Simple monitor: HWMonitor 1.68
+- Open source: Libre Hardware Monitor, MPL 2.0
+- Temperature only: Core Temp 1.21
+- Paid suite: AIDA64 Extreme
+- Checked: 2026-11-05
+
+The closest HWiNFO alternatives are HWMonitor for a simpler sensor view, Libre Hardware Monitor for an open source option, Core Temp for processor temperature alone, CPU-Z for component identification, and AIDA64 Extreme for a paid suite with benchmarks. None of them is listed by its vendor with the same mix of inventory, sensors, alerts, reports and logging that the free HWiNFO edition has.
+
+## Why look for an alternative
+
+People search for HWiNFO alternatives for three reasons. The program shows more than they need. The free edition's 12 hour shared memory limit or 5 item on screen display cap gets in the way; both are explained on the [free vs Pro page](free-vs-pro.html). Or they need the 64 bit build at work and want to compare the cost of a licence with other tools.
+The list below sticks to what each vendor states on its official page on 5 November 2026. Where a page gives no price or no version, the entry says so.
+
+## The six tools
+
+| Tool | What its vendor says it does | Version and date | Cost |
+|---|---|---|---|
+| HWMonitor | Reads main health sensors: voltages, temperatures, fan speeds, clock speeds | 1.68, 14 September 2026 | Direct download; PRO edition sold separately |
+| HWMonitor PRO | Adds remote monitoring, graph generator, tray sensors, editable labels | 1.59, 21 July 2026 | Price not on the product page |
+| AIDA64 Extreme | System information, diagnostics and benchmarks for 64 bit Windows | Not stated on the product page | Paid; price not on the product page |
+| CPU-Z | Freeware that identifies processor, mainboard, chipset and memory | 3.02, 4 November 2026 | Free |
+| Core Temp | Compact monitor for the temperature of each processor core | 1.21, 3 October 2026 | Not stated on the page read |
+| Libre Hardware Monitor | Free software for temperatures, fan speeds, voltages, load and clock speeds | Not stated on the project page | Free, MPL 2.0 licence |
+
+## Notes on each
+
+HWMonitor and HWMonitor PRO come from CPUID. The standard program is a plain sensor list for Windows x86 and x64. PRO adds remote monitoring of PCs or Android devices over TCP/IP with up to 20 connections and 2 years of free updates. The two are set against HWiNFO in [HWiNFO vs HWMonitor](hwinfo-vs-hwmonitor.html).
+AIDA64 Extreme is the commercial suite in this list. Its vendor describes detailed hardware and software information, diagnostics and benchmarks, compatibility with all 64 bit Windows editions including Windows 11 and Windows Server 2025, and 97.5 MB of disk space to install. The product page links to a shop and a trial but states no price.
+CPU-Z, also from CPUID, is freeware that reports the processor name, codename, process, package and cache levels, the mainboard and chipset, memory type, size, timings and module specifications, and real time clock speeds. It is an identification tool, not a temperature monitor.
+Core Temp shows the temperature of each individual core of every processor in the system and supports Intel, AMD and VIA x86 processors on Windows from XP to 11. Libre Hardware Monitor is free software under the MPL 2.0 licence that reads mainboards, Intel and AMD processors, NVIDIA, AMD and Intel graphics cards, drives and network cards.
+
+## When to stay with HWiNFO
+
+- You want inventory and sensors in one program.
+- You need alerts, XML, CSV or HTML reports, or a CSV sensor log without paying.
+- You use Windows on ARM64 or a legacy 32 bit system.
+- You want frequent hardware support updates: HWiNFO had eight stable releases from January to September 2026.
+The [HWiNFO review](review.html) weighs these points, and the [HWiNFO download page](download.html) gets you the current version.
+
+
+## FAQ
+
+**What is the best free alternative to HWiNFO?**
+
+For a simpler sensor view, HWMonitor from CPUID. For open source, Libre Hardware Monitor under the MPL 2.0 licence. Both read temperatures, voltages, fan speeds and clock speeds according to their own pages.
+
+**Is there an open source alternative to HWiNFO?**
+
+Yes. Libre Hardware Monitor is free software licensed under MPL 2.0. Its project page says it monitors temperature sensors, fan speeds, voltages, load and clock speeds.
+
+**Is AIDA64 better than HWiNFO?**
+
+AIDA64 Extreme is a paid suite that includes benchmarks, which HWiNFO's vendor does not advertise as a main feature. HWiNFO is free for non commercial use and publishes its Pro entry prices. No test results stand behind either claim here.
+
+**Is CPU-Z the same kind of tool as HWiNFO?**
+
+Only partly. CPU-Z identifies the processor, mainboard, chipset and memory and shows clock speeds. It is not presented by its vendor as a temperature or sensor monitor.
+
+**Which alternative just shows CPU temperature?**
+
+Core Temp. Its vendor describes it as a compact program that shows the temperature of each individual core of every processor in the system.
