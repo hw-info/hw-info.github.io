@@ -1,717 +1,638 @@
-# Sensor Sheet: all guides
+# Desktop Android Notes: all guides
 
-# HWiNFO 8.54: what it does, what is free and what Pro adds
+# MSI App Player: what it is, what it needs and where to get it
 
-URL: https://hw-info.github.io/index.html
-Updated: 2026-11-05
+URL: https://msiappplayer.github.io/index.html
+Updated: 2026-11-07
 
-HWiNFO lists the hardware inside a Windows PC and reads its sensors in real time. This guide covers the free edition, the Pro licence and the two jobs most people install it for: checking temperatures and logging them.
+MSI App Player is MSI's Android emulator, built with BlueStacks, for running mobile games and apps on a Windows PC or an MSI Claw handheld. This guide explains what it does, what your PC needs and how to fix the one start error MSI documents.
 
 ## Key facts
 
-- Current version: 8.54, 30 September 2026
-- Price: Free for non commercial use
-- Pro from: $29 first year
-- Lifetime from: $199 once
-- Windows: 95 and later, x86, x64, ARM64
-- Checked: 2026-11-05
+- Made by: MSI, with BlueStacks
+- What it is: Android emulator for Windows
+- Price: Free, no price listed
+- Frame rate: Up to 240 FPS (MSI's figure)
+- Controllers: Console Mode
+- Checked: 2026-11-07
 
-HWiNFO is a system information, monitoring and diagnostics program for Windows, with a separate DOS build. The 64 bit and ARM64 builds are free for non commercial use; a Pro licence, from $29 for the first year or from $199 for a lifetime licence, removes the 12 hour shared memory limit and the 5 item on screen display cap and permits commercial use on the right tier. The current stable version is 8.54.
+MSI App Player is a free Android emulator that MSI makes under an exclusive partnership with BlueStacks. It runs Android games and apps on a Windows PC or an MSI Claw handheld, with keyboard, mouse or controller. MSI lists no price, and you download it from MSI's own App Player page.
 
-## What HWiNFO is
+## What MSI App Player is
 
-HWiNFO is a system information, monitoring and diagnostics program for Windows, with a separate build for DOS. It does two jobs. It lists the hardware inside a PC as a tree of components, and it reads sensors in real time, covering processors, graphics cards, mainboards, drives and peripherals. The current stable release is 8.54, dated 30 September 2026.
-The 64 bit and ARM64 builds are free for non commercial use. The paid Pro licence lifts two limits that matter to people who feed sensor data to other programs: [the 12 hour shared memory limit and the 5 item on screen display cap](free-vs-pro.html). Subscriptions start from $29 for the first year and a lifetime licence starts from $199. The [licence and price page](pricing.html) has the terms, including the 14 day refund window.
-If you only want the program, go to the [HWiNFO download page](download.html), which explains the installer and the portable package. If you are still deciding, the [HWiNFO review](review.html) scores it and lists the limits, and the guide to [checking CPU and GPU temperature](check-temperatures.html) shows the Sensors-only mode.
+MSI App Player is an Android emulator. It runs Android inside Windows, so mobile games and apps open in a window on your desktop or on the screen of an MSI Claw. MSI says it built the program under an exclusive partnership with BlueStacks. That means the engine underneath is BlueStacks, and MSI adds its own branding, defaults and a few features aimed at gamers.
+The program is free to download. MSI's page shows a download button and no price, plan or licence key. The page also offers to play on cloud, which streams a game instead of installing the emulator. If you only want the installer, the [MSI App Player download page](download.html) lists what you get, the facts MSI leaves out and the install steps.
 
-## Pages in this guide
+## What MSI lists as its main features
 
-- Download: Installer or portable package, supported Windows versions, licence terms and the install steps.
-- Review: What the program does, the limits the vendor states, pros, cons and a score.
-- Free vs Pro: The feature line between the free 64 bit build and Pro, row by row.
-- Pricing: Subscription, lifetime, the three Pro tiers and the refund rule.
-- Check temperatures: Sensors-only mode, alerts and running at startup.
-- Log sensors: Record sensor values to a CSV file and choose what gets logged.
-- HWiNFO vs HWMonitor: The two best known free monitors side by side, from both vendors' pages.
-- Alternatives: Six other tools and what each vendor says they do.
+- Up to 240 FPS: MSI's page claims frame rates up to 240 FPS. What you actually get depends on the game, your GPU and your display.
+- Console Mode: Connect a controller and play mobile games with a gamepad instead of the keyboard and mouse.
+- Multi-Instance Manager: Run several Android instances, and so several games, at once, and set performance for each instance.
+- Play on cloud: MSI's page offers a cloud option next to the regular download.
+- Keyboard and mouse: The default way to play on a desktop or laptop.
 
-## Builds and what they run on
+## What this guide covers
 
-The vendor ships one installer and one portable package. The table shows which build each contains and the licence that applies.
-| Build | Runs on | Licence |
-|---|---|---|
-| HWiNFO64 (installer or portable) | Windows 7 64 bit and later, x64 | Free for non commercial use, Pro for commercial use |
-| HWiNFO ARM64 | Windows on ARM64 | Free for non commercial use, Pro for commercial use |
-| HWiNFO32 (portable) | Windows 95 and later, x86 | Freeware, commercial use allowed |
-| HWiNFO for DOS | DOS on older x86 systems | Freeware, commercial use allowed |
+Start with the [MSI App Player review](review.html) if you are still deciding whether to install it. It weighs what MSI promises against the limits MSI documents itself. The [MSI App Player system requirements](system-requirements.html) page explains why MSI publishes no spec sheet of its own and uses BlueStacks' published minimums for the engine instead.
+If the emulator is already installed but refuses to open, go to [how to fix the Cannot start MSI App Player error](cannot-start-fix.html). It is the one start problem MSI documents in its knowledge base, and it comes from a clash with Windows virtualization features. To set up controllers, run several games and choose the graphics card, read [how to use MSI App Player](how-to-use.html). If you are wondering why you would not just install BlueStacks itself, [MSI App Player vs BlueStacks 5](vs-bluestacks.html) lays out what is shared and what differs.
 
-> Free reads every sensor in the PC. Pro is for when another program has to keep reading them after 12 hours.
+## Limits worth knowing before you install
+
+- MSI publishes no version number, installer size or system requirements on the App Player page.
+- The emulator relies on hardware virtualization. MSI warns that it can conflict with Hyper-V, VirtualBox and VMware.
+- MSI's start fix turns off Memory integrity in Windows Security, which lowers one of Windows' protections.
+- MSI lists no Mac download. The program targets Windows PCs and the Claw.
+- There is no refund policy because there is nothing to buy.
+
+> Android games on your MSI PC or Claw, free from MSI.
+Check virtualization first and the install is short.
 
 
 ## FAQ
 
-**Is HWiNFO free?**
+**What is MSI App Player?**
 
-Yes, for home use. HWiNFO64 and the ARM64 build are freeware for non commercial use, and HWiNFO32 and the DOS build are freeware without that restriction. Using the 64 bit or ARM64 build in a commercial environment requires a Pro licence.
+MSI App Player is an Android emulator for Windows that MSI makes under an exclusive partnership with BlueStacks. It runs Android games and apps on a PC or an MSI Claw handheld. You can play with keyboard and mouse or with a controller in Console Mode.
 
-**What is the latest version of HWiNFO?**
+**Is MSI App Player free?**
 
-The current stable version is 8.54, released on 30 September 2026. A beta, 8.55 build 6115, is also offered in portable format only. Even version numbers are stable releases and odd numbers are test builds.
+Yes. MSI offers it as a free download from its App Player page and lists no price, subscription or licence key. Because nothing is sold, there is no refund policy.
 
-**Does HWiNFO work on Windows 11?**
+**Is MSI App Player the same as BlueStacks?**
 
-Yes. The installer targets Windows 7 64 bit and later on x64 or ARM64, which includes Windows 11. The portable package also carries a 32 bit build that goes back to Windows 95.
+It runs on the BlueStacks engine, because MSI built it in partnership with BlueStacks. MSI adds its own branding and gaming features such as Console Mode. The download comes from msi.com, not from bluestacks.com.
 
-**Is there a HWiNFO for Mac or Linux?**
+**Does MSI App Player work on the MSI Claw?**
 
-The vendor's download page lists builds for Windows and DOS only. No macOS or Linux build is listed there.
+Yes. MSI presents App Player as the way to play Android mobile games on the Claw alongside Windows games. On the Claw it runs the same way as on a Windows PC.
 
-**Does HWiNFO send my data anywhere?**
+**Why does MSI App Player not start?**
 
-The vendor states that the program does not collect personal information and does not transmit data over the network. That is the vendor's statement, not an independent audit.
+MSI's knowledge base points to virtualization conflicts. Hyper-V, VirtualBox, VMware or the Memory integrity setting in Windows Security can stop it from launching. Turning these off or adjusting them, then restarting, is MSI's documented fix.
 
+**Where should I download MSI App Player?**
 
----
-
-# HWiNFO download: version 8.54 installer and portable package
-
-URL: https://hw-info.github.io/download.html
-Updated: 2026-11-05
-
-The HWiNFO download comes in two forms on the vendor's site: an installer for 64 bit Windows and a portable package that holds the 32 bit, 64 bit and ARM64 builds. Here is which one to pick and what the licence allows.
-
-## Key facts
-
-- Version: 8.54, 30 September 2026
-- Installer: Windows 7 64 bit and later, x64 or ARM64
-- Portable: Windows 95 and later, x86, x64, ARM64
-- Price: Free for non commercial use
-- Installer size: Not confirmed, see vendor page
-- Checked: 2026-11-05
-
-The HWiNFO download is free on hwinfo.com. Version 8.54 is offered as an installer for Windows 7 64 bit and later (x64 or ARM64) and as a portable package containing HWiNFO32, HWiNFO64 and the ARM64 build. There is no trial period: the free edition keeps working, with a 12 hour shared memory limit and a 5 item on screen display cap that only Pro removes.
-
-## What you get
-
-The HWiNFO download gives you the full program, not a cut down trial. The free edition shows the complete hardware tree and every sensor the program can read, and it can write reports and sensor logs. The differences from the paid edition are listed on the [free vs Pro page](free-vs-pro.html).
-The button below goes to the vendor's own download page. This guide does not host installers, and you should not take HWiNFO from mirror sites that repackage it.
-
-## Installer or portable
-
-| Package | Contains | Runs on | Good for |
-|---|---|---|---|
-| Installer | HWiNFO64 or the ARM64 build, matched to the PC | Windows 7 64 bit and later | A PC you monitor every day |
-| Portable | HWiNFO32, HWiNFO64 and HWiNFO ARM64 | Windows 95 and later, x86, x64 or ARM64 | USB sticks, one off checks, old 32 bit systems |
-| Beta (8.55 build 6115) | Portable format only | Same as portable | Trying support for very new hardware |
-| DOS build | Portable | DOS on older x86 systems | Legacy machines |
-The vendor does not confirm an installer size in the pages read for this guide, so check the figure on the download page itself. Even numbered versions such as 8.54 are stable releases; odd numbered versions are test builds.
-
-## Install in 4 steps
-
-1. Open the vendor's download page: Use the button on this page. It leads to hwinfo.com, where the installer and the portable package for version 8.54 are listed.
-2. Pick the package: Choose the installer for a 64 bit or ARM64 Windows PC you will monitor regularly. Choose the portable package if you want no installation or need the 32 bit build.
-3. Run it: Run the installer, or unpack the portable archive and start the build that matches your system. The portable package keeps machine specific settings in the registry unless you switch off Remember Preferences.
-4. Choose a mode on the welcome screen: Leave Sensors-only and Summary-only unticked to get every feature, or tick Sensors-only if you just want temperatures, voltages and fan speeds.
-Next step: the guide to [checking CPU and GPU temperature](check-temperatures.html) walks through the sensors window.
-
-## Licence terms in short
-
-HWiNFO64 and HWiNFO ARM64 are freeware for non commercial use only. HWiNFO32 and the DOS build are freeware and may also be used commercially. Using the 64 bit or ARM64 build at work requires a Pro licence, and the Personal tier of Pro does not cover commercial use either.
-Pro subscriptions start from $29 for the first year and a lifetime licence starts from $199, before local taxes. Refunds are accepted up to 14 days from the order date, subject to individual review. The full table is on the [HWiNFO Pro price page](pricing.html), and the [review](review.html) helps you decide whether you need Pro at all.
-
-
-## FAQ
-
-**Is the HWiNFO download safe?**
-
-Take it from hwinfo.com, the vendor's own site, which is where the button on this page leads. The vendor states the program does not collect personal information or transmit data over the network. Avoid mirror sites and repackaged copies.
-
-**Should I pick HWiNFO64 or HWiNFO32?**
-
-Pick HWiNFO64 on any 64 bit Windows from Windows 7 onward; it is what the installer sets up. HWiNFO32 is the legacy build in the portable package for 32 bit systems back to Windows 95.
-
-**Is there a trial of HWiNFO Pro?**
-
-The vendor pages read for this guide do not describe a Pro trial. The free edition is the way to try the program, and Pro purchases have a 14 day refund window that is subject to individual review.
-
-**Can I test a beta without reinstalling?**
-
-Yes. Betas come in portable format only, and the author's advice is to copy the file from the beta package over the one in the installed folder.
-
-**Do I need to create an account?**
-
-No account is mentioned for the free download. A Pro licence is bought through 2Checkout (Verifone), which emails the licence key after payment.
+Only from MSI's own App Player page on msi.com. Copies on other download sites may be out of date or repackaged, and MSI cannot support them.
 
 
 ---
 
-# HWiNFO review: what version 8.54 does and where the free edition stops
+# MSI App Player review: free BlueStacks power with an MSI badge
 
-URL: https://hw-info.github.io/review.html
-Updated: 2026-11-05
+URL: https://msiappplayer.github.io/review.html
+Updated: 2026-11-07
 
-This HWiNFO review is built from the vendor's own documentation, licence page and release notes. It covers the hardware inventory, the sensors, reports and logging, and the limits that separate the free edition from Pro.
+This MSI App Player review weighs what MSI promises (240 FPS, Console Mode, several games at once) against what it leaves out: no version number, no spec sheet and a start error tied to Windows virtualization.
 
 ## Key facts
 
-- Score: 8.6 / 10
-- Version: 8.54, 30 September 2026
-- Free edition: Full inventory, sensors, reports, logs
-- Free limits: 12 hour shared memory, 5 OSD items
-- Pro from: $29 first year, lifetime from $199
-- Checked: 2026-11-05
+- Score: 7.0 / 10
+- Price: Free, no paid plan
+- Engine: BlueStacks
+- Best for: MSI PC and Claw owners
+- Main catch: Virtualization conflicts
+- Checked: 2026-11-07
 
-HWiNFO scores 8.6 out of 10 in this review. The free edition covers the full hardware inventory, real time sensors, alerts, reports and CSV logging, and it is updated often: eight stable releases between January and September 2026. The paid Pro licence is only needed for commercial use, for more than 5 on screen display items, or when another program must read sensor data for longer than 12 hours.
+MSI App Player earns 7.0 out of 10. It is a free and capable Android emulator because it runs on BlueStacks, and Console Mode makes it a good fit for the MSI Claw. It loses points because MSI publishes little: no version number, no requirements and no changelog on its page. Its documented start fix also asks you to lower a Windows security setting.
 
-## Verdict (8.6/10)
+## Verdict (7.0/10)
 
-For a home PC the free edition is enough: it shows every component and every sensor, raises alerts and writes logs. Pay for Pro when you hit one of three walls the vendor states plainly: commercial use, the 12 hour shared memory limit, or the 5 item on screen display cap.
-The score is an editorial judgement based on the vendor's published features, limits and prices. No hands on benchmark or accuracy test stands behind it.
+If you own an MSI laptop, desktop or Claw and want Android games on it, MSI App Player is a sensible free choice. It runs the BlueStacks engine, supports controllers and runs several instances at once. If you need clear documentation, release notes or a Mac version, go to BlueStacks directly instead.
 
-## Hardware inventory
+## What you are getting
 
-The first half of the program is an inventory. HWiNFO presents the components of the PC as a hierarchy: processor, mainboard, memory, graphics, drives with their S.M.A.R.T. data, network adapters and battery. This HWiNFO review treats that tree as the reason to keep the full mode available, even if you mostly use sensors.
-The release notes show how closely the author tracks new hardware. Version 8.40 in January 2026 added new Intel processor families, 8.46 in April added a new graphics card model and page file reporting, and 8.54 in September added NVMe power state reporting. If you run very recent parts, the beta builds usually pick them up first.
+MSI App Player is MSI's own edition of an Android emulator. MSI says it was developed under an exclusive partnership with BlueStacks. In practice, the part that runs Android is BlueStacks, and MSI provides the branding, the download page and features aimed at its gaming hardware. That matters for this MSI App Player review because most of what the program can do comes from a mature engine that has been around for years. The quality question is less about the engine and more about how MSI packages and documents it.
+The emulator is free. MSI's page offers a download and an option to play on cloud, and lists no price. Nothing is sold, so there are no plans to compare and no refund terms to read. The [MSI App Player download page](download.html) gathers what MSI does and does not publish about the installer.
 
-## Sensors and alerts
+## Features MSI highlights
 
-The second half is real time monitoring of processors, graphics cards, mainboards, drives and peripherals. You can start straight into it with the Sensors-only option on the welcome screen. Alerts can be set on any monitored value, so the program can warn you when a temperature or voltage crosses a threshold you choose.
-Version 8.54 lowered the minimum sensor polling period to 20 ms, and 8.40 made sensor polling multi threaded. HWiNFO64 also has its own on screen display for showing values over a game; the free edition shows up to 5 items there. How it compares with the other well known free monitor is covered in [HWiNFO vs HWMonitor](hwinfo-vs-hwmonitor.html).
+- Up to 240 FPS: MSI's claimed ceiling. We did not measure it, and actual frame rate depends on the game, the GPU and the monitor's refresh rate.
+- Console Mode: Lets you play mobile games with a controller. An MSI forum announcement names MSI, Xbox, PS4 and Logitech controllers and says Back + RB turns the mode on in the latest version.
+- Multi-Instance Manager: Runs several Android instances side by side and sets performance per instance.
+- Play on cloud: A cloud option sits next to the download on MSI's page, for people who do not want to install anything.
 
-## Reports, logging and add ons
+## Where it fits best: the MSI Claw
 
-Reports export to XML, CSV and HTML, which is useful when you need to document a machine before selling or repairing it. Sensor values can be recorded over time to a CSV file from a button in the sensors window; the procedure is in the guide to [logging sensors to CSV](log-sensors.html).
-Other programs can read HWiNFO's values through its shared memory interface. The vendor's add ons page lists a Rainmeter plugin, a Stream Deck plugin, the HWiNFOMonitor gadget and a Generic Log Viewer for analysing log files. Remote monitoring of other machines is supported too, with up to 300 connections.
+MSI positions App Player as part of the Claw's pitch: Windows games plus Android mobile games on one handheld. Console Mode is what makes that practical, because a handheld has no keyboard and touch controls in many mobile games assume a phone. On a desktop or laptop the mode matters less, but it still helps if you prefer a gamepad.
+There is one tension MSI's own pages reveal. MSI's Claw performance FAQ suggests turning off Memory integrity and Virtual Machine Platform while gaming to avoid lower frame rates. Android emulators depend on virtualization, so a Claw owner may end up switching Windows features on and off depending on what they play. [How to use MSI App Player](how-to-use.html) covers controllers, instances and choosing the GPU.
 
-## Where the free edition stops
+## The catch: virtualization and thin documentation
 
-The limits are stated on the vendor's licence page. Shared memory support in the free 64 bit and ARM64 builds runs for 12 hours, then switches itself off and has to be enabled again by hand. Remote sensor monitoring uses the same interface, so it carries the same 12 hour limit. The on screen display is capped at 5 items.
-Automatic reports and sensor logging from the command line, and automatic updates, are Pro only. The whole comparison is on the [free vs Pro page](free-vs-pro.html), and the [price page](pricing.html) lists what each licence tier permits.
+MSI's knowledge base says App Player uses hardware assisted virtualization. It warns that the program can clash with Hyper-V, VirtualBox and VMware. If you see the Cannot start MSI App Player message, MSI's fix is to close or adjust those programs, and on some systems to turn off Memory integrity under Core isolation in Windows Security. That works, but it lowers a Windows protection. People who rely on Hyper-V for work or run virtual machines will feel the friction.
+The bigger gap is documentation. MSI's App Player page gives no version number, installer size, changelog or system requirements. BlueStacks publishes minimums for its engine, and the [MSI App Player system requirements](system-requirements.html) page uses those as the best available guide. When we say a figure is unknown, that is because MSI does not publish it.
 
 ## Pros and cons
 
 Pros:
-- Free edition includes the full inventory, sensors, alerts, reports and CSV logging
-- Frequent releases: 8.40 to 8.54 in nine months of 2026
-- Portable package with 32 bit, 64 bit and ARM64 builds, back to Windows 95
-- Refund accepted within 14 days of the order, subject to review
-- Lifetime licence available for people who dislike subscriptions
+- Free, with no paid tier or licence key
+- Runs on the mature BlueStacks engine
+- Console Mode for controllers, a strong fit for the Claw
+- Multi-Instance Manager runs several games at once
+- MSI documents a fix for its most common start error
 Cons:
-- Shared memory and remote monitoring stop after 12 hours in the free edition
-- On screen display limited to 5 items without Pro
-- Commercial use of the 64 bit build needs Pro, and the Personal tier does not cover it
-- No macOS or Linux build listed
-- Engineer and Corporate prices are not easy to find outside the checkout
+- No version number, size or changelog on MSI's page
+- No system requirements published by MSI
+- Conflicts with Hyper-V, VirtualBox and VMware
+- Documented fix lowers a Windows security setting
+- No Mac download listed by MSI
 
-## Who it suits
+## Who should install it, and who should not
 
-HWiNFO suits anyone who wants to know exactly what is inside a Windows PC and how hot it runs, at no cost. It suits system builders and repair shops as well, though they need an Engineer or Corporate licence for the 64 bit build. People who only want one number, such as processor temperature, may find a smaller tool easier.
-Ready to try it? The [download page](download.html) explains which package to take.
-
-
-## FAQ
-
-**Is HWiNFO safe to use?**
-
-HWiNFO is published by its author on hwinfo.com and has had regular releases throughout 2026. The vendor states it does not collect personal information or transmit data over the network. Download it from the vendor's site rather than from mirrors.
-
-**Is HWiNFO accurate?**
-
-The vendor does not publish accuracy figures, and this review did not measure any. The program reads the sensors that the hardware exposes, and the release notes show regular fixes for specific sensor readings.
-
-**Is HWiNFO really free?**
-
-Yes for non commercial use of the 64 bit and ARM64 builds, and without restriction for HWiNFO32 and the DOS build. The free edition has a 12 hour shared memory limit and a 5 item on screen display cap.
-
-**Is HWiNFO Pro worth it?**
-
-It is worth it if you use the program commercially, need more than 5 on screen display items, or run a gadget or dashboard that reads shared memory around the clock. For occasional temperature checks the free edition does the same job.
-
-**How often is HWiNFO updated?**
-
-The version history lists stable releases on 8 January, 24 February, 4 March, 14 April, 26 May, 8 July, 25 August and 30 September 2026. Beta builds appear between them.
-
-
----
-
-# HWiNFO Pro price: subscription, lifetime licence and refund terms
-
-URL: https://hw-info.github.io/pricing.html
-Updated: 2026-11-05
-
-The HWiNFO Pro price depends on two choices: subscription or lifetime, and which of the three tiers you need. These are the figures and terms on the vendor's licence page, with the gaps marked.
-
-## Key facts
-
-- Free edition: $0, non commercial use
-- Subscription: From $29 first year
-- Renewal: From $14.50, 50% to 60% off
-- Lifetime: From $199 once
-- Refund: 14 days, subject to review
-- Checked: 2026-11-05
-
-The HWiNFO Pro price starts from $29 for the first year of a subscription, with renewals from $14.50, and from $199 for a lifetime licence that covers all future updates. Prices exclude local taxes and the final amount is shown at checkout. Refunds are accepted up to 14 days from the order date, subject to individual review.
-
-## Licences at a glance
-
-The HWiNFO Pro price is published as a from figure on the vendor's licence page. The table sets it beside the free builds. Where a separate price for a tier could not be confirmed, the table says so.
-| Licence | Who may use it | Commercial use | Price |
-|---|---|---|---|
-| HWiNFO64 and ARM64, free | Anyone | No | $0 |
-| HWiNFO32 and DOS | Anyone | Yes | $0 |
-| Pro Personal | One private user | No | Subscription from $29 first year |
-| Pro Engineer | 1 user on unlimited computers | Yes | Not confirmed, shown at checkout |
-| Pro Corporate | 1 computer, unlimited users in the organisation | Yes | Not confirmed, shown at checkout |
-| Lifetime option | As the chosen tier | As the chosen tier | From $199 once |
-The vendor lists a volume discount for all three Pro tiers. Prices exclude local taxes.
-
-## How the subscription works
-
-A subscription buys a maintenance period of 1, 2 or 3 years. During that period you can license every Pro version that is released. When it ends, the versions released during the period keep working as Pro; only the right to license newer versions lapses.
-Renewal is cheaper than the first purchase. The licence page gives a renewal discount of 50% to 60%, with renewals from $14.50. If you let it lapse you are not locked out of the program, since the free edition and your last licensed Pro version both remain usable. What you lose by staying on the free edition is set out on the [free vs Pro page](free-vs-pro.html).
-
-## The lifetime licence
-
-The lifetime licence is a one time purchase that covers all future updates of HWiNFO 64 and ARM64 Pro. The licence page shows it from $199. The page text available for this guide does not make clear which tier that figure belongs to, so confirm the amount for your tier at checkout.
-As a rough guide using the from prices only, a first year at $29 followed by renewals at $14.50 stays below $199 for more than a decade. The author describes lifetime as the premium option and points price sensitive buyers to the subscription.
-
-## Refunds and payment
-
-Refunds are accepted up to 14 days from the date of the order and are subject to individual review, according to the licence page and the licence agreement. That is a review, not an unconditional money back guarantee.
-Payment runs through 2Checkout (Verifone), which bills you and emails the licence key. The vendor points to 2Checkout's own refund policy for processing details. No coupon codes are published on the vendor pages read for this guide; the only standing discounts are the renewal and volume discounts.
-
-## Which licence to choose
-
-- Home PC, occasional checks: stay on the free edition from the [download page](download.html).
-- Home PC with a dashboard, gadget or more than 5 on screen display items: Pro Personal subscription.
-- Technician who works on many machines: Pro Engineer, licensed per user.
-- Company machines with shared users: Pro Corporate, licensed per computer.
-- Remote monitoring: the licence on the central system has to cover all connected machines.
-Not sure the program is right for you at all? Read the [HWiNFO review](review.html) first, or look at the [alternatives](alternatives.html).
+Install it if you own MSI hardware, especially a Claw, and want Android games with controller support at no cost. Skip it, or use BlueStacks directly, if you want published release notes, a Mac version or support channels that document every setting. The engine is the same, so the choice comes down to packaging and where you prefer to get updates. [MSI App Player vs BlueStacks 5](vs-bluestacks.html) compares the two side by side.
 
 
 ## FAQ
 
-**How much does HWiNFO Pro cost?**
+**Is MSI App Player safe?**
 
-A subscription starts from $29 for the first year and renews from $14.50. A lifetime licence starts from $199. Local taxes are added at checkout, where the final price for your country is shown.
+Downloaded from MSI's own App Player page, it is the vendor's official build of a BlueStacks based emulator. The safety trade off MSI documents is in its start fix, which can mean turning off Memory integrity in Windows Security. Turn it back on if you stop using the emulator.
 
-**Is there a HWiNFO lifetime licence?**
+**Is MSI App Player better than BlueStacks?**
 
-Yes. The lifetime licence is a one time purchase that covers all future updates of HWiNFO 64 and ARM64 Pro. The licence page shows it from $199.
+It is not a different engine, because MSI builds it with BlueStacks. MSI adds Console Mode and packaging for its own hardware. BlueStacks publishes more documentation and release notes, so the choice is about packaging rather than core performance.
 
-**What is the HWiNFO refund policy?**
+**Does MSI App Player really run at 240 FPS?**
 
-Refunds are accepted up to 14 days from the date of the order and each request is reviewed individually. Payments and refunds are processed by 2Checkout (Verifone).
+240 FPS is MSI's stated maximum, not a guaranteed result. The frame rate you see depends on the game's own cap, your GPU and your monitor's refresh rate. We have not measured it.
 
-**What happens when my subscription ends?**
+**Can MSI App Player run more than one game?**
 
-Pro versions released during your maintenance period keep working. You lose only the right to license versions released afterwards, until you renew.
+Yes. The Multi-Instance Manager runs several Android instances at once, and you can set performance per instance. Each instance needs its own share of RAM and CPU, so how many you can run depends on your hardware.
 
-**Do I need a licence to use HWiNFO at work?**
+**Is MSI App Player worth it?**
 
-Yes for HWiNFO64 and the ARM64 build: commercial use requires an Engineer or Corporate Pro licence, and the Personal tier does not cover it. HWiNFO32 and the DOS build are freeware that may be used commercially.
-
-**Is there a HWiNFO coupon or discount?**
-
-The vendor pages read for this guide list no coupon codes. The published discounts are 50% to 60% on renewals and a volume discount on all three Pro tiers.
+For MSI PC and Claw owners it costs nothing and adds Android games with controller support, so it is worth trying. If you depend on Hyper-V or virtual machines, expect to change some Windows settings first.
 
 
 ---
 
-# HWiNFO free vs Pro: the limits and what the licence removes
+# MSI App Player download: the official installer and how to set it up
 
-URL: https://hw-info.github.io/free-vs-pro.html
-Updated: 2026-11-05
+URL: https://msiappplayer.github.io/download.html
+Updated: 2026-11-07
 
-HWiNFO free vs Pro comes down to a short list on the vendor's licence page: a 12 hour limit, a 5 item cap, command line automation, automatic updates and the right to use it commercially.
+The MSI App Player download is free and comes from MSI's own App Player page. Here is what you get, what MSI does and does not publish about the file, and the five steps from installer to first game.
 
 ## Key facts
 
-- Shared memory, free: 12 hours, then off
-- Shared memory, Pro: No time limit
-- OSD items: 5 free, unlimited Pro
-- Command line automation: Pro only
-- Commercial use: Engineer or Corporate licence
-- Checked: 2026-11-05
+- Price: Free, no licence key
+- Current version: Not published by MSI
+- Installer size: Not published by MSI
+- Runs on: Windows PC, MSI Claw
+- Source: msi.com App Player page
+- Checked: 2026-11-07
 
-In HWiNFO free vs Pro, the monitoring itself is the same: both show the full hardware tree and every sensor. The free 64 bit and ARM64 builds switch shared memory support off after 12 hours, show at most 5 on screen display items, and lack command line reporting and logging and automatic updates. Pro removes those limits and, on the Engineer and Corporate tiers, permits commercial use.
+You can download MSI App Player free from MSI's App Player page on msi.com. There is no paid plan, trial or licence key. MSI does not publish the current version number or the installer size, so check that virtualization is enabled before you run the installer.
 
-## Feature line between free and Pro
+## What you get
 
-HWiNFO free vs Pro is drawn in the comparison table on the vendor's licence page. The rows below are the ones that differ.
-| Feature | Free (HWiNFO64, ARM64) | Pro |
+The MSI App Player download installs MSI's edition of the BlueStacks Android emulator on Windows. Once it is installed, you sign in with a Google account to use the Play Store, as on any Android device, and install games and apps from there. MSI's page also offers to play on cloud, which streams a game in place of a local install.
+Features you can use straight away include Console Mode for controllers, the Multi-Instance Manager for running several games at once, and keyboard and mouse control. [How to use MSI App Player](how-to-use.html) walks through each of them.
+
+## What MSI publishes and what it does not
+
+| Item | What MSI says |
+|---|---|
+| Price | No price shown, free download |
+| Trial or licence | None, nothing to buy or activate |
+| Current version | Not published on the App Player page |
+| Installer size | Not published |
+| System requirements | Not published by MSI; BlueStacks publishes engine minimums |
+| Mac version | None listed |
+| Refund policy | Not applicable, nothing is sold |
+Because MSI does not list a spec sheet, the [MSI App Player system requirements](system-requirements.html) page uses BlueStacks' published minimums for the engine: 4 GB of RAM, 5 GB of free disk space and administrator rights on Windows.
+
+## Check these before you install
+
+- Virtualization is enabled. Open Task Manager, go to Performance, select CPU and look for Virtualization: Enabled.
+- You have administrator rights on the PC.
+- VirtualBox, VMware and other virtual machine programs are closed, because MSI notes they can conflict.
+- At least 5 GB of disk space is free, the BlueStacks engine minimum.
+
+## Install MSI App Player in five steps
+
+1. Open MSI's App Player page: Use the download button on this page. It takes you to MSI's official App Player page on msi.com.
+2. Download the installer: Choose Download, not the cloud option, if you want the emulator on your PC. Save the file and run it.
+3. Approve and install: Allow the installer to make changes when Windows asks, then let it install. It may need a restart if it changes virtualization components.
+4. Sign in to Google Play: On first launch, sign in with a Google account so you can install games from the Play Store.
+5. Install a game and set controls: Install a game, then play with keyboard and mouse, or connect a controller and turn on Console Mode.
+
+## If it will not open after installing
+
+The most common problem MSI documents is the Cannot start MSI App Player message. It comes from a conflict with Hyper-V, other virtual machine software or Memory integrity in Windows Security. The page on [how to fix the Cannot start MSI App Player error](cannot-start-fix.html) follows MSI's own steps.
+
+
+## FAQ
+
+**Is the MSI App Player download free?**
+
+Yes. MSI offers it as a free download and shows no price, trial limit or licence key. You only need a Google account to install games from the Play Store.
+
+**What is the latest version of MSI App Player?**
+
+MSI does not publish a version number on its App Player page. The installer you download from msi.com is the version MSI currently offers, so downloading from MSI keeps you on the official build.
+
+**How big is the MSI App Player installer?**
+
+MSI does not state the installer size. Plan for at least 5 GB of free disk space, which is BlueStacks' published minimum for its engine, and more if you install large games.
+
+**Does MSI App Player work on Windows 11?**
+
+MSI's page does not list supported Windows versions. BlueStacks documents Windows 10 version 1903 or later and Windows 11 for its engine when Hyper-V is enabled, and recent BlueStacks 5 builds run with Hyper-V on or off.
+
+**Can I download MSI App Player on a Mac?**
+
+MSI lists no Mac version. The program targets Windows PCs and the MSI Claw handheld.
+
+**Is there a refund policy?**
+
+No, and none is needed. MSI App Player is free, so there is nothing to buy or cancel.
+
+
+---
+
+# MSI App Player system requirements: what MSI states and what the engine needs
+
+URL: https://msiappplayer.github.io/system-requirements.html
+Updated: 2026-11-07
+
+MSI does not publish MSI App Player system requirements on its App Player page. BlueStacks, whose engine the program runs on, does. This page sets out those minimums, the virtualization rules MSI documents and how to check your PC in two minutes.
+
+## Key facts
+
+- MSI spec sheet: Not published
+- RAM (engine): 4 GB minimum
+- Free disk (engine): 5 GB minimum
+- Virtualization: Required, hardware assisted
+- Hyper-V setups: Windows 10 1903+ or 11
+- Checked: 2026-11-07
+
+MSI publishes no system requirements for MSI App Player. The BlueStacks engine it runs on needs at least 4 GB of RAM, 5 GB of free disk space, an Intel or AMD processor and administrator rights on Windows. Hardware virtualization should be enabled, and MSI warns that Hyper-V, VirtualBox or VMware can stop the emulator from starting.
+
+## What MSI publishes
+
+MSI's App Player page describes features, not hardware. It names a 240 FPS ceiling, Console Mode, the Multi-Instance Manager and a cloud option. It does not list MSI App Player system requirements, a minimum Windows version or a disk figure. MSI's knowledge base adds one technical fact that matters more than any number: the emulator uses hardware assisted virtualization, and that can conflict with other virtualization software on the PC.
+Because MSI built the program in partnership with BlueStacks, the closest official figures are the ones BlueStacks publishes for BlueStacks 5. We use those below and label them as engine minimums, not MSI promises.
+
+## Minimums from the BlueStacks engine
+
+| Requirement | BlueStacks 5 minimum | Source |
 |---|---|---|
-| Hardware inventory and sensors | Yes | Yes |
-| Shared Memory Support | Limited to 12 hours per run | Not time limited |
-| Remote sensor monitoring | Limited to 12 hours | No 12 hour cut off, up to 300 connections |
-| On screen display items | 5 | Unlimited |
-| Automatic report from the command line | No | Yes |
-| Sensor logging from the command line | No | Yes |
-| Automatic update | No | Yes |
-| NPU stress test (added in 8.42) | No | Yes |
-| Commercial use | No | Yes on Engineer and Corporate, no on Personal |
-| Price | $0 | From $29 first year or from $199 lifetime |
+| Operating system | Windows 7 and later (Hyper-V setups: Windows 10 1903+ or 11) | BlueStacks |
+| Processor | Intel or AMD | BlueStacks |
+| RAM | 4 GB | BlueStacks support |
+| Free disk space | 5 GB | BlueStacks support |
+| Rights | Administrator on the PC | BlueStacks |
+| Virtualization | Hardware assisted, enabled | MSI knowledge base |
+BlueStacks notes that free disk space does not substitute for RAM. Its own blog suggests 8 GB of RAM and an SSD for a smoother experience, so treat 4 GB as a floor. Each extra instance in the Multi-Instance Manager needs its own share of memory.
 
-## The 12 hour shared memory limit
+## Virtualization: the requirement that decides everything
 
-Shared memory is how other programs read HWiNFO's sensor values: Rainmeter skins, the Stream Deck plugin, dashboards and similar add ons. In the free edition it is time limited to 12 hours. When the limit is reached while the program is running, the feature is deactivated automatically and you have to enable Shared Memory Support again by hand.
-This explains a common complaint that the Shared Memory Support setting becomes unchecked after a few hours. It is the documented limit, not a fault. If your PC is switched off each night you may never notice it. A machine that runs for days with a sensor panel attached will.
+Android emulators run Android in a lightweight virtual machine, and they need the processor's virtualization feature switched on. BlueStacks says its 64 bit Android instances require it. To check, open Task Manager, select the Performance tab, choose CPU and read the Virtualization line. If it says Disabled, turn it on in the BIOS. BlueStacks' guide points to the Intel virtualization setting, and on AMD systems the equivalent is usually called SVM.
+The second rule is about other virtualization users. MSI warns that Hyper-V, VirtualBox and VMware can conflict with App Player. BlueStacks says version 5.20 and later can run with Hyper-V either on or off, which eases this, but MSI's guidance still recommends closing other virtual machine programs before you launch. If the emulator will not open, follow [the Cannot start MSI App Player fix](cannot-start-fix.html).
 
-## The 5 item on screen display cap
+## Check your PC in four steps
 
-HWiNFO64 has a built in on screen display for showing sensor values over a game. The licence table lists a maximum of 5 items in the free edition and unlimited in Pro. Since version 8.54 the display can put several values on one line.
-Five items cover the usual set of processor temperature, graphics temperature, two loads and a frame related value. People who want a full telemetry column are the ones the cap affects.
+1. RAM: Open Settings, then System, then About, and read Installed RAM. You need 4 GB at least, more if you plan to run several instances.
+2. Disk space: Open File Explorer, select This PC and confirm at least 5 GB free on the drive where the emulator will install.
+3. Virtualization: In Task Manager, open Performance, select CPU and confirm Virtualization: Enabled.
+4. Other virtual machines: Close VirtualBox, VMware or similar programs before launching MSI App Player.
 
-## Command line, updates and remote use
+## Graphics on laptops with two GPUs
 
-Pro adds a command line interface for automatic reporting and sensor logging, which is what you need to script an inventory across many machines or start a log without clicking. In the free edition, logging is started by hand from the sensors window, as described in the [sensor logging guide](log-sensors.html).
-Automatic updates are Pro only; free users fetch new versions themselves. Remote sensor monitoring relies on shared memory, so in the free edition it stops after 12 hours too. With Pro, the licence on the central system has to cover every machine connected to it.
+MSI has a FAQ for AMD laptops where the emulator runs on the integrated graphics instead of the discrete card. The fix is to assign the emulator a specific GPU in Windows graphics settings, then check the GPU in use field in App Player's settings to confirm the change. This matters if you are chasing the high frame rates MSI advertises. The [MSI App Player review](review.html) covers what that 240 FPS figure does and does not mean.
 
-## Commercial use
+## If your PC falls short
 
-Using HWiNFO64 or HWiNFO ARM64 in a commercial environment requires a Pro licence, and the Personal tier does not qualify. Engineer is licensed per user for unlimited computers and Corporate per computer for unlimited users. The [price page](pricing.html) has the terms.
-HWiNFO32 and the DOS build are freeware that may be used commercially, but they are legacy builds.
-
-## Do you need Pro?
-
-- No, if you open HWiNFO to check temperatures, read specifications or log a session by hand.
-- Yes, if a gadget, panel or remote viewer must keep receiving data for more than 12 hours.
-- Yes, if you want more than 5 values in the on screen display.
-- Yes, if you script reports or logging, or use the 64 bit build at work.
-The cheapest way to find out is to run the free edition from the [download page](download.html) for a week. If the 12 hour limit is the only problem and you would rather not pay, some of the [HWiNFO alternatives](alternatives.html) may fit.
+With less than 4 GB of RAM, or with virtualization locked off by an employer's policy, no Android emulator will run well. The [MSI App Player alternatives](alternatives.html) page lists other options, including cloud play, which moves the work off your PC. If the numbers above fit, the [MSI App Player download page](download.html) has the install steps.
 
 ## FAQ
 
-**Why does HWiNFO shared memory turn off after 12 hours?**
+**What are the MSI App Player system requirements?**
 
-It is the stated limit of the free 64 bit and ARM64 builds. After 12 hours of run time the feature deactivates itself and must be enabled again manually. Pro has no time limit.
+MSI does not publish any. The BlueStacks engine it uses needs Windows, an Intel or AMD processor, 4 GB of RAM, 5 GB of free disk space and administrator rights. Hardware virtualization should be enabled.
 
-**How many OSD items does free HWiNFO allow?**
+**How much RAM does MSI App Player need?**
 
-Five. The vendor's licence table lists a maximum of 5 on screen display items for the free edition and unlimited for Pro.
+BlueStacks lists 4 GB as the minimum for its engine and suggests 8 GB for smoother play. Running several instances at once needs more, because each instance takes its own memory.
 
-**Does the free edition show fewer sensors than Pro?**
+**Does MSI App Player need virtualization?**
 
-No. The vendor's comparison does not list any sensor or inventory difference. The limits concern shared memory time, on screen display items, command line automation, automatic updates and commercial use.
+Yes. MSI says the program uses hardware assisted virtualization. Check it in Task Manager under Performance, then CPU, and enable it in the BIOS if it shows Disabled.
 
-**Can I log sensors in the free edition?**
+**Can MSI App Player run with Hyper-V enabled?**
 
-Yes. Logging to CSV is started from a button in the sensors window. Only starting a log automatically from the command line is a Pro feature.
+BlueStacks says version 5.20 and later run with Hyper-V on or off, and Hyper-V setups need Windows 10 1903 or later or Windows 11. MSI's older knowledge base article still warns of Hyper-V conflicts, so adjust Hyper-V if the emulator will not start.
 
-**Does Pro stop working when the subscription ends?**
+**Does MSI App Player need an MSI computer?**
 
-No. Pro versions released during your maintenance period keep working after it ends. You need to renew only to license newer versions.
+MSI's page is aimed at MSI PCs and the Claw handheld, and we could not confirm a stated hardware restriction either way. If the installer refuses your machine, BlueStacks itself is the closest substitute.
 
 
 ---
 
-# How to check CPU and GPU temperature with HWiNFO
+# How to use MSI App Player: controllers, several games at once and the right GPU
 
-URL: https://hw-info.github.io/check-temperatures.html
-Updated: 2026-11-05
+URL: https://msiappplayer.github.io/how-to-use.html
+Updated: 2026-11-07
 
-To check CPU temperature with HWiNFO you only need the sensors window. These steps use the option names the program itself uses and the answers its author gives in the vendor forum.
+How to use MSI App Player after installing it: sign in, install a game, turn on Console Mode for a controller, run several instances with the Multi-Instance Manager and make sure it uses your discrete GPU.
 
 ## Key facts
 
-- Mode: Sensors-only on the welcome screen
-- Covers: CPU, GPU, mainboard, drives, peripherals
-- Default polling: 2000 ms
-- OSD: Up to 5 items in the free edition
-- Cost: Free for non commercial use
-- Checked: 2026-11-05
+- Console Mode: Back + RB on the controller
+- Controllers named: MSI, Xbox, PS4, Logitech
+- Several games: Multi-Instance Manager
+- GPU check: GPU in use field in Settings
+- Checked: 2026-11-07
 
-To check CPU temperature with HWiNFO, start the program, tick Sensors-only on the welcome screen and read the processor and graphics entries in the sensors window. Values refresh every 2000 ms by default. The free edition is enough for this; you can add alerts, show up to 5 values in the on screen display and enable Auto Start to keep it running.
+To use MSI App Player, sign in with a Google account, install a game from the Play Store and play with keyboard and mouse. For a gamepad, connect it and press Back + RB to turn on Console Mode. Use the Multi-Instance Manager to run several games at once, and on dual GPU laptops assign the emulator to the discrete card in Windows graphics settings.
 
-## Before you start
+## First launch and your first game
 
-You need HWiNFO on a Windows PC; the [download page](download.html) explains the installer and the portable package. Everything on this page works in the free edition. To check CPU temperature with HWiNFO you do not need the full hardware tree, which is why the program offers a mode that opens the sensors alone.
-The vendor does not publish safe temperature limits for your hardware. Compare what you read with the maximum operating temperature in the specification from the maker of your processor or graphics card.
+This guide on how to use MSI App Player assumes it is already installed. If not, start with the [MSI App Player download page](download.html). On first launch the emulator opens an Android home screen. Sign in with a Google account to unlock the Play Store, as you would on a new phone, then search for a game and install it. Games appear on the emulator's home screen and open in their own tab or window.
+Keyboard and mouse work straight away. Many popular games ship with ready made key layouts in BlueStacks based emulators, but MSI does not document the controls editor on its own page, so check inside the game window for the controls option before remapping keys yourself.
 
-## Steps
+## Play with a controller in Console Mode
 
-1. Start HWiNFO and tick Sensors-only: The welcome screen has two options, Sensors-only and Summary-only. Tick Sensors-only to open just the sensors window. With both unticked you get every feature, including the hardware tree.
-2. Find the processor and graphics entries: The sensors window groups readings by device: processors, graphics cards, mainboard, drives and peripherals. Temperatures sit alongside voltages, fan speeds, loads and clocks for each device.
-3. Let it run under load: Start the game or task you care about and leave the sensors window open. Values refresh on the polling period, 2000 ms by default, and version 8.54 allows a period as short as 20 ms.
-4. Set an alert: HWiNFO can raise an alert when any monitored value reaches a threshold you set in the sensor settings. Use it for the processor and graphics temperatures you want to watch.
-5. Show values in a game: HWiNFO64 has its own on screen display. Pick the values to show in the sensor settings; the free edition shows up to 5 items, and since 8.54 several values can share a line.
-6. Keep it running: Enable Auto Start in the settings so HWiNFO starts with Windows; this creates a task in the Task Scheduler. Show Sensors on Startup opens the sensors window directly, and Minimize Sensors instead of closing keeps it out of the way.
+Console Mode is MSI's way of making touch games playable with a gamepad. MSI's forum announcement for the release that added it names MSI's own controllers plus Xbox, PS4 and Logitech pads, and says older versions may not support it.
+1. Connect the controller: Plug in or pair the controller with Windows before you open the emulator.
+2. Open MSI App Player: Launch the latest version. Console Mode needs a current build.
+3. Press Back + RB: On the controller, press Back and RB together to switch Console Mode on.
+4. Open a game: Start a game and play with the controller. Switch back to keyboard and mouse the same way if you need to.
 
-## Reading the sensors window
+## Run several games with the Multi-Instance Manager
 
-A modern PC exposes a long list of sensors, and HWiNFO shows all it can read. For a quick health check you need only a handful: the processor temperature, the graphics card temperature, drive temperatures and the fan speeds. Monitoring can be switched off for sensors you do not need, which shortens the list.
-In Sensors-only mode the program places an icon in the system tray. Right click it to reach the Settings menu. If you want a record over time instead of a live view, continue with [logging sensors to a CSV file](log-sensors.html).
+The Multi-Instance Manager creates separate Android instances, each with its own apps and accounts. MSI says you can run several games at once and set performance for each instance. A common use is keeping one game running in the background while you play another, or running two accounts of the same game.
+Each instance takes its own share of RAM and CPU. BlueStacks lists 4 GB of RAM as the minimum for a single instance, so a PC with 8 GB will struggle with more than one or two heavy games. The [MSI App Player system requirements](system-requirements.html) page explains the engine minimums.
 
-## Common problems
+## Make it use the right graphics card
 
-- Only the summary appears and no sensors: Summary-only is ticked. Untick it on the welcome screen.
-- The welcome screen no longer appears: enable Show Welcome Screen and Progress in the settings, click OK and start HWiNFO again.
-- Stuck in Sensors-only with Auto Start on: the author's fix is to open HWiNFO64.INI and set SensorsOnly to 0.
-- Settings in a mess: the Reset Preferences button in the settings window restores the defaults.
-- A gadget stops receiving values after some hours: that is the 12 hour shared memory limit, explained under [free vs Pro](free-vs-pro.html).
+MSI documents a case on AMD laptops where the emulator runs on integrated graphics instead of the discrete GPU. That caps frame rates well below what the hardware can do.
+1. Open Windows graphics settings: Go to Settings, then System, then Display, then Graphics.
+2. Add MSI App Player: Add the App Player program to the list if it is not there already.
+3. Choose the GPU: Open its options and select the high performance discrete GPU, then save.
+4. Confirm inside the emulator: Open App Player's Settings and check the GPU in use field shows the discrete card.
 
-## If you want something simpler
+## Notes for the MSI Claw
 
-HWiNFO shows far more than temperatures, and that can be more than you need. A smaller monitor may suit a quick look; the comparison of [HWiNFO vs HWMonitor](hwinfo-vs-hwmonitor.html) sets the two side by side.
-
+On the Claw, Console Mode is the natural way to play, because the built in controls act as a gamepad. MSI's Claw performance FAQ suggests turning off Memory integrity and Virtual Machine Platform while gaming for better frame rates. The emulator relies on virtualization, though, so if App Player stops launching after you change those settings, see [how to fix the Cannot start MSI App Player error](cannot-start-fix.html). For an overall verdict on the Claw use case, read the [MSI App Player review](review.html).
 
 ## FAQ
 
-**How do I see CPU temperature in HWiNFO?**
+**How do I turn on Console Mode in MSI App Player?**
 
-Start HWiNFO, tick Sensors-only on the welcome screen and look for the processor entries in the sensors window. Temperatures are listed with the other readings for each device.
+Connect the controller to Windows first, then open the latest MSI App Player and press Back + RB on the controller. MSI's forum announcement says older versions may not support Console Mode, so update if nothing happens.
 
-**Why does HWiNFO only show the summary?**
+**Which controllers work with MSI App Player?**
 
-Summary-only is enabled. Untick it on the welcome screen, or use Reset Preferences in the settings window if the welcome screen is hidden.
+MSI's announcement names MSI controllers plus Xbox, PS4 and Logitech controllers. Other gamepads that Windows recognises may work, but MSI does not list them.
 
-**How often does HWiNFO update readings?**
+**Can I run two games at once in MSI App Player?**
 
-The default polling period is 2000 ms. It can be changed in the settings, and version 8.54 reduced the minimum to 20 ms.
+Yes. Open the Multi-Instance Manager, create a second instance and launch a game in each. Every instance uses its own RAM and CPU, so performance drops as you add more.
 
-**Can HWiNFO start with Windows?**
+**Why is MSI App Player using my integrated graphics?**
 
-Yes. The Auto Start option creates a task in the Windows Task Scheduler. Combine it with Show Sensors on Startup to open the sensors window automatically.
+Windows may assign it to the power saving GPU on dual GPU laptops. Set it to the high performance GPU in Windows graphics settings, then confirm in the GPU in use field in App Player's Settings.
 
-**What temperature is too high?**
+**Do I need a Google account?**
 
-HWiNFO's vendor does not publish limits. Check the maximum operating temperature in the specification from the maker of your processor or graphics card and set an alert below it.
+Yes, to install games from the Play Store, as on any Android device. Use an account you are comfortable signing in to on a PC.
 
 
 ---
 
-# HWiNFO logging: how to record sensors to a CSV file
+# Cannot start MSI App Player: the virtualization conflict and how to fix it
 
-URL: https://hw-info.github.io/log-sensors.html
-Updated: 2026-11-05
+URL: https://msiappplayer.github.io/cannot-start-fix.html
+Updated: 2026-11-07
 
-HWiNFO logging writes sensor values to a CSV file while you play or run a workload. The steps below follow the answers the program's author gives in the vendor forum.
+If you see Cannot start MSI App Player, the cause MSI documents is a clash with other virtualization users on Windows: Hyper-V, VirtualBox, VMware or Memory integrity. Here are MSI's fixes in order, least invasive first.
 
 ## Key facts
 
-- Where: Button at the bottom of the sensors window
-- Format: CSV, opens in Excel
-- Choose values: Logged checkbox in sensor settings
-- Default polling: 2000 ms
-- Automatic start: Pro only, command line
-- Checked: 2026-11-05
+- Error: Cannot start MSI App Player
+- Cause (MSI): Virtualization conflict
+- Conflicts with: Hyper-V, VirtualBox, VMware
+- MSI KB article: No. 03632
+- Security trade off: Memory integrity off
+- Checked: 2026-11-07
 
-HWiNFO logging is started with the button at the bottom of the sensors window, which writes sensor values to a CSV file until you stop it. The Logged checkbox in the sensor settings decides which values go into the file. Manual logging works in the free edition; starting a log automatically from the command line is a Pro feature.
+The Cannot start MSI App Player message appears when another program or Windows feature is already using hardware virtualization. MSI's fix is to close VirtualBox or VMware, adjust Hyper-V, and if needed turn off Memory integrity under Core isolation in Windows Security, then restart. Also confirm that virtualization is enabled in the BIOS.
 
-## What the sensor log is
+## Why MSI App Player cannot start
 
-HWiNFO logging records every polled value of the sensors you select, one row per polling cycle, in a CSV file that spreadsheet programs open directly. It is the tool for questions a live view cannot answer: how hot the processor got during a two hour session, or whether a voltage dipped before a crash.
-The sensor log is separate from the report file. A report is a snapshot of the hardware inventory in XML, CSV or HTML. The author notes that the report option to log all sensors affects only the report, not the sensor log.
+MSI's knowledge base article No. 03632 explains the Cannot start MSI App Player warning. The emulator uses hardware assisted virtualization to run Android. If Hyper-V, VirtualBox, VMware or a similar tool already holds that feature, the emulator cannot take it and refuses to launch. Windows' Memory integrity setting, part of Core isolation, runs on the same hypervisor and can block it too.
+The article dates from 2020. BlueStacks says its version 5.20 and later can run with Hyper-V enabled, so newer builds may start where older ones failed. The steps below still match what MSI documents and are the right place to start.
 
-## Steps
+## Fix it step by step
 
-1. Open the sensors window: Start HWiNFO and tick Sensors-only on the welcome screen, or open the sensors from the full program. If you have not installed it yet, see the download page.
-2. Choose what to log: Open the sensor settings and go to the tab for customising values. Make sure Logged is enabled for each value you want in the file and that monitoring of that sensor is enabled.
-3. Start logging: Use the button at the bottom of the sensors window that starts and stops logging, and choose where to save the file.
-4. Run your workload: Leave HWiNFO running while you play or test. A new row is written on each polling cycle.
-5. Stop logging: Press the same button again. The file is complete once logging stops.
-6. Open the CSV: Import the file into a spreadsheet, or load it in the Generic Log Viewer listed on the vendor's add ons page to plot and compare logs.
-New to the sensors window? The guide to [checking temperatures with HWiNFO](check-temperatures.html) covers Sensors-only mode, and the [download page](download.html) covers installation.
+1. Close other virtual machine programs: Quit VirtualBox, VMware and any similar tool completely, including their tray icons, then try App Player again. MSI recommends this first.
+2. Confirm virtualization is enabled: Open Task Manager, select Performance, choose CPU and check Virtualization: Enabled. If it says Disabled, enable the Intel virtualization or AMD SVM setting in the BIOS.
+3. Turn off Memory integrity: Open Windows Security, go to Device security, select Core isolation details and switch Memory integrity off. Restart the PC so the change takes effect.
+4. Adjust Hyper-V: If it still fails, open Turn Windows features on or off and clear Hyper-V and related virtualization features, then restart. MSI's regional FAQ also gives the command bcdedit /set hypervisorlaunchtype off, run as administrator, to stop Hyper-V from loading.
+5. Update or reinstall: Download the current installer from MSI and reinstall. A newer build may handle Hyper-V without these changes.
 
-## Keeping the file small
+## The security trade off
 
-By default a log can contain hundreds of columns. The Logged checkbox is the filter: untick it for values you do not need and they stay out of the CSV. Disabling monitoring for whole sensors you never read also reduces the work done on every cycle.
-Sensors that appear only after logging has started cannot be placed in the header at the top. HWiNFO adds a second header at the bottom of the file that lists those late sensors as well, so check the end of the file if a column seems to have no title.
+Memory integrity protects Windows from malicious drivers. Turning it off to run an emulator lowers that protection. MSI's own Claw FAQ makes a related point: it suggests turning Memory integrity and Virtual Machine Platform off only while gaming, not permanently. If you rarely use App Player, turn Memory integrity back on afterwards. If you need it on all the time, check whether a newer build starts with Hyper-V enabled before you change anything.
 
-## Polling period and timing
+## Which setting causes which symptom
 
-The global polling period is 2000 ms by default and sets how often a row is written. It applies to all sensors; separate periods exist only for S.M.A.R.T. and embedded controller sensors, which are derived from the global value. Version 8.54 lowered the minimum period to 20 ms.
-Do not expect exact spacing between rows. The author says millisecond precision is not achievable, and slow sensors stretch the interval. The Profiling Time column shows which sensors take longest to read, so you can disable them.
+| What is running | Typical symptom | First fix |
+|---|---|---|
+| VirtualBox or VMware | Cannot start warning | Quit the program fully |
+| Hyper-V feature | Cannot start warning | Turn off in Windows features |
+| Memory integrity on | Cannot start warning | Core isolation details, switch off |
+| Virtualization off in BIOS | Emulator fails or runs poorly | Enable VT or SVM |
+| Integrated GPU in use | Low frame rate, not a start error | Assign discrete GPU |
+The last row is not a start problem, but it is the next complaint people have once the emulator opens. [How to use MSI App Player](how-to-use.html) shows how to move it onto the discrete GPU.
 
-## What Pro adds to logging
+## If nothing works
 
-In the free edition a person has to press the button. Pro adds command line switches that start the sensors with logging automatically, set the polling rate, choose the log format and limit the run time. Version 8.54 also allows notes to be inserted into the JSON sensor log.
-That matters for unattended test benches and scheduled jobs. The other differences are on the [free vs Pro page](free-vs-pro.html), and licence costs are on the [price page](pricing.html).
-
+Some workplace PCs lock virtualization or Memory integrity through policy, and you cannot change them. Older processors may lack hardware virtualization altogether. Check the [MSI App Player system requirements](system-requirements.html) first. If your PC cannot meet them, the [MSI App Player alternatives](alternatives.html) page lists cloud and other options. Otherwise, reinstall the current build from the [MSI App Player download page](download.html).
 
 ## FAQ
 
-**How do I start logging in HWiNFO?**
+**What does Cannot start MSI App Player mean?**
 
-Open the sensors window and use the button at the bottom that starts and stops logging. Choose a file location, run your workload and press the button again to finish.
+It means the emulator could not get the hardware virtualization it needs. According to MSI, another user of that feature, such as Hyper-V, VirtualBox, VMware or Memory integrity, is usually the cause.
 
-**Where does HWiNFO save the log file?**
+**Do I have to turn off Memory integrity?**
 
-In the location you choose when you start logging. The output is a CSV file that can be imported into Excel or another spreadsheet.
+Not always. Try closing VirtualBox or VMware and updating the emulator first. If it still fails, MSI's documented fix is to switch off Memory integrity under Core isolation and restart.
 
-**Why are some sensors missing from my log?**
+**Is it safe to turn off Core isolation?**
 
-Check that Logged is enabled for those values in the sensor settings and that monitoring of the sensor is enabled. The report option to log all sensors does not affect the sensor log.
+It lowers Windows' protection against malicious drivers. MSI's Claw guidance suggests turning these features off only while gaming, so switch Memory integrity back on when you are done.
 
-**Can HWiNFO start logging automatically?**
+**MSI App Player is stuck on starting. What should I do?**
 
-Only in Pro, which supports command line switches that start the sensors with logging. In the free edition logging is started by hand.
+Treat it like the Cannot start error. Close virtual machine programs, confirm virtualization is enabled in Task Manager, adjust Hyper-V and restart. If it still hangs, reinstall the current build from MSI.
 
-**How do I view a HWiNFO log as a graph?**
+**Can I keep Hyper-V and use MSI App Player?**
 
-Open the CSV in a spreadsheet and chart the columns, or use the Generic Log Viewer from the vendor's add ons page, which is made for analysing and comparing HWiNFO logs.
-
-**Why is a header row at the bottom of my CSV?**
-
-Sensors that appeared after logging began could not be included in the first header. HWiNFO writes a second header at the end of the file that lists them too.
+BlueStacks says version 5.20 and later run with Hyper-V on or off, on Windows 10 1903 or later or Windows 11. Whether your MSI build includes that depends on the version MSI ships, which MSI does not publish.
 
 
 ---
 
-# HWiNFO vs HWMonitor: which hardware monitor to install
+# MSI App Player vs BlueStacks 5: same engine, different wrapper
 
-URL: https://hw-info.github.io/hwinfo-vs-hwmonitor.html
-Updated: 2026-11-05
+URL: https://msiappplayer.github.io/vs-bluestacks.html
+Updated: 2026-11-07
 
-HWiNFO vs HWMonitor is the usual choice when you want to see temperatures on a Windows PC. This comparison uses only what each vendor publishes on its own product pages.
+MSI App Player vs BlueStacks 5 is not a contest between two engines. MSI builds its emulator with BlueStacks. The real differences are packaging, extras, documentation and where you get updates.
 
 ## Key facts
 
-- HWiNFO version: 8.54, 30 September 2026
-- HWMonitor version: 1.68, 14 September 2026
-- HWiNFO scope: Full inventory plus sensors
-- HWMonitor scope: Main health sensors
-- HWiNFO Pro from: $29 first year
-- HWMonitor PRO price: Not on the product page
-- Checked: 2026-11-05
+- Engine: BlueStacks in both
+- Price: Both free to download
+- Console Mode: MSI App Player
+- Mac version: BlueStacks only
+- Published specs: BlueStacks only
+- Checked: 2026-11-07
 
-In HWiNFO vs HWMonitor, HWiNFO is the broader tool: it adds a full hardware inventory, XML, CSV and HTML reports, alerts, CSV logging and remote monitoring to the sensor view, free for non commercial use. HWMonitor from CPUID is a narrower program that reads the main health sensors: voltages, temperatures, fan speeds and clock speeds. Pick HWMonitor for a quick look and HWiNFO when you need detail, logs or alerts.
+MSI App Player runs on BlueStacks, because MSI built it under an exclusive partnership with BlueStacks, so core Android compatibility is shared. MSI adds Console Mode and packaging for its PCs and the Claw. BlueStacks 5 publishes system requirements, release notes and a Mac version. Pick MSI App Player for MSI hardware and controller play, and BlueStacks for documentation or macOS.
 
-## The short version
+## What the two share
 
-HWiNFO vs HWMonitor is less a contest than a difference in scope. HWMonitor, published by CPUID, describes itself as a hardware monitoring program that reads a PC's main health sensors. HWiNFO describes itself as system information, monitoring and diagnostics, and the sensor view is only half of it.
-Both are current. HWMonitor 1.68 is dated 14 September 2026 and HWiNFO 8.54 is dated 30 September 2026. Neither vendor publishes accuracy tests against the other, and none were run for this page.
+When people compare MSI App Player vs BlueStacks, they often expect two different programs. MSI says App Player was developed under an exclusive partnership with BlueStacks, so the Android engine underneath is the same family. Both run Android games and apps from the Play Store on Windows. Both have a Multi-Instance Manager for running several instances, and both need hardware virtualization.
+Both are free to download. Neither asks you to buy a licence to run games, so price does not decide this comparison.
 
 ## Side by side
 
-|  | HWiNFO | HWMonitor |
+|  | MSI App Player | BlueStacks 5 |
 |---|---|---|
-| Vendor | HWiNFO | CPUID |
-| Current version | 8.54, 30 September 2026 | 1.68, 14 September 2026 |
-| Platforms | Windows 95 and later on x86, x64, ARM64; DOS build | Windows x86 and x64 |
-| Packages | Installer and portable | Setup program and zip archive |
-| Scope | Hardware inventory tree plus real time sensors | Main health sensors: voltages, temperatures, fan speeds, clock speeds |
-| Reports | XML, CSV, HTML | Not stated on the product page |
-| Logging | CSV sensor log in the free edition | Graph generator from saved data in PRO |
-| Alerts | Yes, on any monitored value | Not stated on the product page |
-| Remote monitoring | Yes; 12 hour limit in free, up to 300 connections | PRO only, up to 20 remote connections |
-| Paid edition | Pro from $29 first year or from $199 lifetime | HWMonitor PRO; price not shown on the product page |
-Entries marked not stated mean the vendor's product page does not mention the feature. It does not prove the feature is absent.
+| Maker | MSI, with BlueStacks | BlueStacks |
+| Download from | msi.com | bluestacks.com |
+| Price | Free | Free |
+| Console Mode (MSI feature) | Yes | Not under that name |
+| Multi-Instance Manager | Yes | Yes |
+| Cloud option on download page | Yes, play on cloud | BlueStacks offers its own cloud play |
+| Published minimum RAM and disk | Not published | 4 GB RAM, 5 GB disk |
+| Hyper-V on or off | Not stated by MSI | Both, from version 5.20 |
+| Mac version | None listed | Yes, macOS 11 and later |
+| Version number on page | Not published | Published in release notes |
 
-## When HWiNFO is the better pick
+## Where MSI App Player is the better pick
 
-- You want the specifications of every component as well as the sensors.
-- You need a record: the free edition writes sensor logs to CSV and reports to XML, CSV or HTML.
-- You want a warning when a value crosses a threshold.
-- You run Windows on ARM64 or a very old 32 bit system; the portable package covers both.
-- You feed values to gadgets or panels through shared memory, bearing in mind the 12 hour limit of the free edition.
-The [HWiNFO review](review.html) goes through these features and the free edition's limits in more detail.
+MSI App Player makes most sense on MSI hardware. MSI presents it as the way to add Android games to the Claw handheld, and Console Mode is what makes that comfortable: press Back + RB on a controller and touch games become gamepad games. MSI's forum announcement names MSI, Xbox, PS4 and Logitech controllers. If you own an MSI laptop or desktop, getting the emulator from the same vendor as your hardware also keeps support in one place. The [MSI App Player review](review.html) scores it on that basis.
 
-## When HWMonitor is the better pick
+## Where BlueStacks 5 is the better pick
 
-HWMonitor does one thing: it shows the main health sensors. If all you want is to glance at temperatures, voltages and fan speeds, a program with that scope gives you less to scroll through.
-HWMonitor PRO, version 1.59 dated 21 July 2026, adds remote monitoring of other PCs or Android devices over TCP/IP, a graph generator that saves logging graphs as bitmap files, sensors in the system tray and editable sensor labels. Its licence includes unlimited usage duration, up to 20 remote connections and 2 years of free updates. CPUID does not show the price on the product page.
+BlueStacks documents far more. It publishes minimum requirements, release notes and detailed help on Hyper-V and virtualization. MSI's App Player page publishes none of these, which is why the [MSI App Player system requirements](system-requirements.html) page relies on BlueStacks' figures. BlueStacks also has a macOS version, while MSI lists only Windows and the Claw. If you need to know exactly which build you are running and what changed, BlueStacks is the clearer choice.
 
-## Paid editions compared
+## How to choose
 
-HWiNFO publishes its entry prices: from $29 for the first year of a Pro subscription, renewals from $14.50, and a lifetime licence from $199, with refunds accepted within 14 days subject to review. Details are on the [HWiNFO Pro price page](pricing.html). For HWMonitor PRO you have to visit CPUID's shop to see a price.
-The two paid editions also unlock different things. HWiNFO Pro mainly removes limits and permits commercial use. HWMonitor PRO adds features the free HWMonitor does not have, such as remote monitoring and graphs. Other options are listed under [HWiNFO alternatives](alternatives.html).
-
+- MSI Claw or other MSI hardware, controller play: MSI App Player.
+- Mac: BlueStacks, because MSI offers no Mac build.
+- Need published requirements and changelogs: BlueStacks.
+- Already have one installed and it works: there is little reason to switch, since the engine is shared.
+If neither suits you, for example because you cannot enable virtualization, see the [MSI App Player alternatives](alternatives.html). If you have settled on MSI's build, go to the [MSI App Player download page](download.html).
 
 ## FAQ
 
-**Is HWiNFO better than HWMonitor?**
+**Is MSI App Player just BlueStacks?**
 
-HWiNFO does more: inventory, reports, alerts, CSV logging and remote monitoring on top of the sensors. HWMonitor is narrower and reads the main health sensors. Which is better depends on whether you want detail or a quick look.
+It runs on BlueStacks, because MSI built it under an exclusive partnership with BlueStacks. MSI adds its own branding, Console Mode and a download page aimed at its hardware. The core Android compatibility comes from the BlueStacks engine.
 
-**Which is more accurate, HWiNFO or HWMonitor?**
+**Which is faster, MSI App Player or BlueStacks 5?**
 
-Neither vendor publishes accuracy figures and no measurement was made for this page. Both read the sensors that the hardware exposes.
+Neither vendor publishes a head to head comparison, and we have not run one. With a shared engine, speed depends far more on your CPU, GPU, RAM and settings than on which wrapper you install.
 
-**Are both programs free?**
+**Can I install MSI App Player and BlueStacks together?**
 
-HWiNFO64 is free for non commercial use, with paid Pro licences. CPUID offers HWMonitor as a direct download and sells an extended HWMonitor PRO; its product page does not state a price.
+Neither MSI nor BlueStacks documents running both side by side. Both rely on the same virtualization feature, so to avoid conflicts, run only one at a time.
 
-**Can I run HWiNFO and HWMonitor together?**
+**Does BlueStacks have Console Mode?**
 
-Neither vendor's product page addresses running both at once. The [download page](download.html) of this guide covers getting HWiNFO; try one monitor at a time if readings look odd.
+Console Mode is the name MSI uses for App Player's controller mode. BlueStacks supports gamepads in its own way, but this exact feature and the Back + RB shortcut come from MSI's App Player announcement.
 
-**Does HWMonitor log temperatures?**
+**Which one should I use on a Mac?**
 
-The standard HWMonitor page does not mention logging. HWMonitor PRO has a graph generator that saves monitoring data and produces logging graphs as bitmap files.
+BlueStacks, because it offers a macOS version for macOS 11 and later. MSI lists no Mac version of App Player.
 
 
 ---
 
-# HWiNFO alternatives: 6 hardware monitoring tools compared
+# MSI App Player alternatives: other ways to run Android games on a PC
 
-URL: https://hw-info.github.io/alternatives.html
-Updated: 2026-11-05
+URL: https://msiappplayer.github.io/alternatives.html
+Updated: 2026-11-07
 
-These HWiNFO alternatives cover the same ground in different ways, from a single purpose temperature reader to a paid diagnostic suite. Each entry uses facts from that tool's own official page.
+The main MSI App Player alternatives are BlueStacks itself, Google Play Games for PC, independent emulators such as LDPlayer, MEmu and NoxPlayer, and developer tools like the Android Studio Emulator. Here is what each one is for.
 
 ## Key facts
 
-- Tools listed: 6
-- Simple monitor: HWMonitor 1.68
-- Open source: Libre Hardware Monitor, MPL 2.0
-- Temperature only: Core Temp 1.21
-- Paid suite: AIDA64 Extreme
-- Checked: 2026-11-05
+- Closest match: BlueStacks 5, same engine
+- From Google: Google Play Games for PC
+- For developers: Android Studio Emulator
+- For Linux: Waydroid
+- Common need: Virtualization enabled
+- Checked: 2026-11-07
 
-The closest HWiNFO alternatives are HWMonitor for a simpler sensor view, Libre Hardware Monitor for an open source option, Core Temp for processor temperature alone, CPU-Z for component identification, and AIDA64 Extreme for a paid suite with benchmarks. None of them is listed by its vendor with the same mix of inventory, sensors, alerts, reports and logging that the free HWiNFO edition has.
+The closest MSI App Player alternative is BlueStacks 5, which runs the same engine and adds a Mac version and published documentation. Google Play Games for PC runs a curated set of games from Google itself. LDPlayer, MEmu and NoxPlayer are independent Windows emulators. Android Studio Emulator suits developers, and Waydroid suits Linux users.
 
-## Why look for an alternative
+## Why look for MSI App Player alternatives
 
-People search for HWiNFO alternatives for three reasons. The program shows more than they need. The free edition's 12 hour shared memory limit or 5 item on screen display cap gets in the way; both are explained on the [free vs Pro page](free-vs-pro.html). Or they need the 64 bit build at work and want to compare the cost of a licence with other tools.
-The list below sticks to what each vendor states on its official page on 5 November 2026. Where a page gives no price or no version, the entry says so.
+People look for MSI App Player alternatives for a few clear reasons. MSI lists no Mac version. MSI publishes no requirements or release notes. The emulator can clash with Hyper-V and other virtual machine tools. Some users simply want a game catalogue run by Google. Before switching, check whether your problem is the virtualization conflict. If it is, the [Cannot start MSI App Player fix](cannot-start-fix.html) may solve it without changing emulators.
+Every option on this page except cloud play also relies on hardware virtualization, so switching emulators will not get around a PC that has it locked off.
 
-## The six tools
+## The options at a glance
 
-| Tool | What its vendor says it does | Version and date | Cost |
+| Option | Made by | Best for | Platforms |
 |---|---|---|---|
-| HWMonitor | Reads main health sensors: voltages, temperatures, fan speeds, clock speeds | 1.68, 14 September 2026 | Direct download; PRO edition sold separately |
-| HWMonitor PRO | Adds remote monitoring, graph generator, tray sensors, editable labels | 1.59, 21 July 2026 | Price not on the product page |
-| AIDA64 Extreme | System information, diagnostics and benchmarks for 64 bit Windows | Not stated on the product page | Paid; price not on the product page |
-| CPU-Z | Freeware that identifies processor, mainboard, chipset and memory | 3.02, 4 November 2026 | Free |
-| Core Temp | Compact monitor for the temperature of each processor core | 1.21, 3 October 2026 | Not stated on the page read |
-| Libre Hardware Monitor | Free software for temperatures, fan speeds, voltages, load and clock speeds | Not stated on the project page | Free, MPL 2.0 licence |
+| BlueStacks 5 | BlueStacks | Same engine, more documentation | Windows, macOS |
+| Google Play Games for PC | Google | Curated games from Google | Windows |
+| LDPlayer | LDPlayer | Independent Windows emulator | Windows |
+| MEmu Play | Microvirt | Independent Windows emulator | Windows |
+| NoxPlayer | BigNox | Independent emulator | Windows, macOS |
+| Android Studio Emulator | Google | Testing your own apps | Windows, macOS, Linux |
+| Waydroid | Open source project | Android on Linux | Linux |
+Platforms reflect what each vendor offers on its own site. Check each vendor's page for current system requirements before installing.
 
-## Notes on each
+## BlueStacks 5: the closest match
 
-HWMonitor and HWMonitor PRO come from CPUID. The standard program is a plain sensor list for Windows x86 and x64. PRO adds remote monitoring of PCs or Android devices over TCP/IP with up to 20 connections and 2 years of free updates. The two are set against HWiNFO in [HWiNFO vs HWMonitor](hwinfo-vs-hwmonitor.html).
-AIDA64 Extreme is the commercial suite in this list. Its vendor describes detailed hardware and software information, diagnostics and benchmarks, compatibility with all 64 bit Windows editions including Windows 11 and Windows Server 2025, and 97.5 MB of disk space to install. The product page links to a shop and a trial but states no price.
-CPU-Z, also from CPUID, is freeware that reports the processor name, codename, process, package and cache levels, the mainboard and chipset, memory type, size, timings and module specifications, and real time clock speeds. It is an identification tool, not a temperature monitor.
-Core Temp shows the temperature of each individual core of every processor in the system and supports Intel, AMD and VIA x86 processors on Windows from XP to 11. Libre Hardware Monitor is free software under the MPL 2.0 licence that reads mainboards, Intel and AMD processors, NVIDIA, AMD and Intel graphics cards, drives and network cards.
+Because MSI built App Player with BlueStacks, BlueStacks 5 is the nearest substitute. You get the same engine and a Multi-Instance Manager, plus published minimums (4 GB RAM, 5 GB disk), release notes and a macOS version. You lose MSI's Console Mode branding and the MSI download page. [MSI App Player vs BlueStacks 5](vs-bluestacks.html) compares them in detail.
 
-## When to stay with HWiNFO
+## Google Play Games for PC
 
-- You want inventory and sensors in one program.
-- You need alerts, XML, CSV or HTML reports, or a CSV sensor log without paying.
-- You use Windows on ARM64 or a legacy 32 bit system.
-- You want frequent hardware support updates: HWiNFO had eight stable releases from January to September 2026.
-The [HWiNFO review](review.html) weighs these points, and the [HWiNFO download page](download.html) gets you the current version.
+Google's own program runs a selection of Android games on Windows, with sign in through your Google account. It is not a full Android environment. You get the games Google has approved for PC, not every app in the Play Store. Choose it if your games are in its catalogue and you prefer software from Google. It also needs virtualization enabled.
 
+## Independent emulators and developer tools
+
+LDPlayer, MEmu Play and NoxPlayer are free Android emulators from independent vendors, aimed at mobile gamers on Windows. They compete with BlueStacks rather than build on it, so settings and features differ. Read each vendor's own pages for what is free and what is optional before you install.
+The Android Studio Emulator is Google's tool for app developers. It is accurate and up to date with Android releases, but it is built for testing apps, not for playing games with a controller. Waydroid runs Android in a container on Linux, which neither MSI nor BlueStacks supports.
+
+## Which to pick
+
+- You own MSI hardware or a Claw and want controller play: stay with MSI App Player, covered in the [MSI App Player review](review.html).
+- You use a Mac: BlueStacks or NoxPlayer.
+- You want Google's curated games only: Google Play Games for PC.
+- You build Android apps: Android Studio Emulator.
+- You run Linux: Waydroid.
+If you decide MSI's build is right for you after all, the [MSI App Player download page](download.html) has the official installer and setup steps.
 
 ## FAQ
 
-**What is the best free alternative to HWiNFO?**
+**What is the best alternative to MSI App Player?**
 
-For a simpler sensor view, HWMonitor from CPUID. For open source, Libre Hardware Monitor under the MPL 2.0 licence. Both read temperatures, voltages, fan speeds and clock speeds according to their own pages.
+BlueStacks 5 is the closest, because MSI App Player is built with BlueStacks. It adds a Mac version and published requirements and release notes. Google Play Games for PC is the main option from Google.
 
-**Is there an open source alternative to HWiNFO?**
+**Is there an MSI App Player for Mac?**
 
-Yes. Libre Hardware Monitor is free software licensed under MPL 2.0. Its project page says it monitors temperature sensors, fan speeds, voltages, load and clock speeds.
+MSI lists no Mac version. BlueStacks offers a macOS version for macOS 11 and later, and it runs the same engine family.
 
-**Is AIDA64 better than HWiNFO?**
+**Is there an Android emulator that works without virtualization?**
 
-AIDA64 Extreme is a paid suite that includes benchmarks, which HWiNFO's vendor does not advertise as a main feature. HWiNFO is free for non commercial use and publishes its Pro entry prices. No test results stand behind either claim here.
+Modern Android emulators for games rely on hardware virtualization, and BlueStacks says its 64 bit instances require it. If your PC cannot enable it, cloud play is the realistic option.
 
-**Is CPU-Z the same kind of tool as HWiNFO?**
+**Is Google Play Games for PC the same as MSI App Player?**
 
-Only partly. CPU-Z identifies the processor, mainboard, chipset and memory and shows clock speeds. It is not presented by its vendor as a temperature or sensor monitor.
+No. Google Play Games runs a curated list of games that Google approves for PC. MSI App Player is a full Android emulator where you can install apps from the Play Store.
 
-**Which alternative just shows CPU temperature?**
+**Can I use these alternatives on an MSI Claw?**
 
-Core Temp. Its vendor describes it as a compact program that shows the temperature of each individual core of every processor in the system.
+The Claw runs Windows, so Windows emulators can install on it. MSI App Player is the one MSI presents for the Claw and includes Console Mode.

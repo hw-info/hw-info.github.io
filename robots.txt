@@ -47,4 +47,4 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://hw-info.github.io/sitemap.xml
+Sitemap: https://msiappplayer.github.io/sitemap.xml

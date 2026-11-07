@@ -1,22 +1,21 @@
-# Sensor Sheet
+# Desktop Android Notes
 
-> Independent notes on HWiNFO: what the free edition does, what Pro costs, and how to read and log your PC's sensors, compiled from the vendor's own pages.
+> An independent guide to MSI App Player. It covers what the emulator does, what it needs and how to fix the start error MSI documents, and it sends you to MSI's own download.
 
-Independent guides to Hwinfo by Sensor Sheet. Facts come from the vendor's pages on the date shown on each page.
-
-## Do it
-- [HWiNFO download: version 8.54 installer and portable package](https://hw-info.github.io/download.html): HWiNFO 8.54 download guide: installer for Windows 7 64 bit and later, portable package for 32 bit, 64 bit and ARM64, licence terms and install steps.
-- [How to check CPU and GPU temperature with HWiNFO](https://hw-info.github.io/check-temperatures.html): How to check CPU and GPU temperature with HWiNFO: start in Sensors-only mode, read the sensors window, set alerts and keep it running at startup.
-- [HWiNFO logging: how to record sensors to a CSV file](https://hw-info.github.io/log-sensors.html): HWiNFO logging step by step: start the CSV sensor log, pick values with the Logged checkbox, set the polling period and open the file afterwards.
+Independent guides to Www.Msi.Com by Desktop Android Notes. Facts come from the vendor's pages on the date shown on each page.
 
 ## Decide
-- [HWiNFO review: what version 8.54 does and where the free edition stops](https://hw-info.github.io/review.html): HWiNFO review from the vendor's documentation: hardware inventory, sensors, logging, free edition limits, Pro pricing and a score of 8.6 out of 10.
-- [HWiNFO Pro price: subscription, lifetime licence and refund terms](https://hw-info.github.io/pricing.html): HWiNFO Pro price read on hwinfo.com: subscription from $29 for the first year, renewals from $14.50, lifetime from $199, 14 day refund window.
-- [HWiNFO free vs Pro: the limits and what the licence removes](https://hw-info.github.io/free-vs-pro.html): HWiNFO free vs Pro: shared memory stops after 12 hours and the OSD shows 5 items in the free edition. See what Pro removes and who needs it.
+- [MSI App Player review: free BlueStacks power with an MSI badge](https://msiappplayer.github.io/review.html): MSI App Player review: MSI's free BlueStacks based emulator, Console Mode, multiple instances, the 240 FPS claim, the virtualization catch and our score.
+- [MSI App Player system requirements: what MSI states and what the engine needs](https://msiappplayer.github.io/system-requirements.html): MSI App Player system requirements: what MSI publishes (nothing), BlueStacks engine minimums of 4 GB RAM and 5 GB disk, virtualization and Hyper-V rules.
+
+## Do it
+- [MSI App Player download: the official installer and how to set it up](https://msiappplayer.github.io/download.html): Download MSI App Player free from MSI: what the installer includes, what MSI does not publish (version, size), what to check first and the install steps.
+- [How to use MSI App Player: controllers, several games at once and the right GPU](https://msiappplayer.github.io/how-to-use.html): How to use MSI App Player: install games, enable Console Mode with Back + RB, run several games with the Multi-Instance Manager and pick the right GPU.
+- [Cannot start MSI App Player: the virtualization conflict and how to fix it](https://msiappplayer.github.io/cannot-start-fix.html): Fix the Cannot start MSI App Player message: close VirtualBox or VMware, adjust Hyper-V, turn off Memory integrity, enable VT in BIOS. Steps from MSI's KB.
 
 ## Compare
-- [HWiNFO vs HWMonitor: which hardware monitor to install](https://hw-info.github.io/hwinfo-vs-hwmonitor.html): HWiNFO vs HWMonitor compared from both vendors' pages: versions, platforms, reports, logging, remote monitoring and what the paid editions add.
-- [HWiNFO alternatives: 6 hardware monitoring tools compared](https://hw-info.github.io/alternatives.html): Six HWiNFO alternatives with facts from each vendor's page: HWMonitor, HWMonitor PRO, AIDA64 Extreme, CPU-Z, Core Temp and Libre Hardware Monitor.
+- [MSI App Player vs BlueStacks 5: same engine, different wrapper](https://msiappplayer.github.io/vs-bluestacks.html): MSI App Player vs BlueStacks 5: same engine, but different extras, documentation, Mac support and update source. A side by side table to help you pick one.
+- [MSI App Player alternatives: other ways to run Android games on a PC](https://msiappplayer.github.io/alternatives.html): MSI App Player alternatives: BlueStacks, Google Play Games for PC, LDPlayer, MEmu, NoxPlayer, Android Studio Emulator and Waydroid, and when each one fits.
 
 ## Full text
-- [llms-full.txt](https://hw-info.github.io/llms-full.txt): every guide on this site in plain markdown
+- [llms-full.txt](https://msiappplayer.github.io/llms-full.txt): every guide on this site in plain markdown

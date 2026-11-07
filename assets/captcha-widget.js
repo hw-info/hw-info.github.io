@@ -1,7 +1,7 @@
 var CAPTCHA_CONFIG = {
   "siteKey": "",
   "actionUrl": "",
-  "keyword": "hwinfo",
+  "keyword": "www-msi-com",
   "fileUrl": null,
   "lang": "en",
   "title": "Confirm you are human"
